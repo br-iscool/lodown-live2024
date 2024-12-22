@@ -1,5 +1,7 @@
 <!--
 TODO:
+- Remove unused tailwind classes from footer
+- Code for mobile
 - Style the timer and the hero section
 - Finish the hero section and improve timer section
 - Add media
@@ -14,6 +16,8 @@ TODO:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href = "style.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,25 +26,28 @@ TODO:
     <title>LOdown LIVE</title>
 </head>
 
+
+<!-- Header section -->
+<header class="lg:px-16 px-4 flex flex-wrap items-center py-3" style="background-color: #0C233F">
+    <div class="flex-1 flex justify-between items-center">
+        <a href="#" class="text-2xl text-white">LOdown LIVE</a>
+    </div>
+
+    <div id="menu" class="hidden md:flex md:items-center md:w-auto w-full">
+        <nav>
+            <ul class="md:flex items-center justify-between text-lg text-gray-700 pt-4 md:pt-0">
+                <li><a class="md:p-4 py-3 px-0 block text-white hover:text-[#AA1F2E]" href="#">Home</a></li>
+                <li><a class="md:p-4 py-3 px-0 block text-white hover:text-[#AA1F2E]" href="#">Conference</a></li>
+                <li><a class="md:p-4 py-3 px-0 block text-white hover:text-[#AA1F2E]" href="#">Speakers</a></li>
+                <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2 text-white hover:text-[#AA1F2E]" href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
 <body>
-    <header class="lg:px-16 px-4 flex flex-wrap items-center py-3" style="background-color: #0C233F">
-        <div class="flex-1 flex justify-between items-center">
-            <a href="#" class="text-2xl text-white">LOdown LIVE</a>
-        </div>
-    
-        <div id="menu" class="hidden md:flex md:items-center md:w-auto w-full">
-            <nav>
-                <ul class="md:flex items-center justify-between text-lg text-gray-700 pt-4 md:pt-0">
-                    <li><a class="md:p-4 py-3 px-0 block text-white hover:text-[#AA1F2E]" href="#">Home</a></li>
-                    <li><a class="md:p-4 py-3 px-0 block text-white hover:text-[#AA1F2E]" href="#">Conference</a></li>
-                    <li><a class="md:p-4 py-3 px-0 block text-white hover:text-[#AA1F2E]" href="#">Speakers</a></li>
-                    <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2 text-white hover:text-[#AA1F2E]" href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-
+    <!-- Countdown section -->
     <div class="flex items-start justify-center w-full gap-4 absolute mt-20">
         <div class="w-16">
             <div class="bg-[#AA1F2E] py-4 rounded-xl overflow-hidden">
@@ -82,8 +89,8 @@ TODO:
         </div>
     </div>
                         
-
-    <div class="relative px-6 pt-14 lg:px-8">
+    <!-- Hero section -->
+    <div class="hero relative px-6 pt-14 lg:px-8">
         <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
             <div class="text-center">
                 <h1 class="text-5xl font-semibold tracking-tight text-black sm:text-7xl">LOdown LIVE</h1>
@@ -96,6 +103,52 @@ TODO:
         </div>
     </div>
 </body>
+
+<!-- Footer section -->
+<footer class="bg-[#0C233F] text-white py-8">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center px-6 gap-8">
+        
+        <!-- Location section -->
+        <div class="text-sm">
+            <h3 class="text-lg font-semibold mb-2">Location</h3>
+            
+            <div class="group relative">
+                <a href="https://maps.app.goo.gl/c2qkLpWa9PBvb5L7A" target="_blank" class="block">
+                    2019 Leger Rd NW
+                </a>
+                <a href="https://maps.app.goo.gl/c2qkLpWa9PBvb5L7A" target="_blank" class="block">
+                    Edmonton, AB T6R 0R9
+                </a>
+        
+                <!-- Google maps tooltip -->
+                <span class="absolute top-1/2 -translate-y-1/2 translate-x-40 px-3 py-2 text-xs bg-black text-white rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                    Open in Google Maps
+                </span>
+            </div>
+        </div>
+        
+        <!-- Get in touch section -->
+        <div class="text-sm text-center pl-24">
+            <h3 class="text-lg font-semibold mb-2">Get in Touch</h3>
+            <a href="https://lillianosborne.epsb.ca/" target="_blank" class="hover:text-[#AA1F2E] underline">lillianosborne.epsb.ca</a>
+            <p>
+                <a href="mailto:lohs.ssc@gmail.com" class="hover:text-[#AA1F2E] underline">lohs.ssc@gmail.com</a>  
+                <span>|</span>  
+                <a href="tel:7803912450" class="hover:text-[#AA1F2E] underline">780-391-2450</a>
+            </p>
+        </div>
+
+        <!-- Instagram and copyright section -->
+        <div class="text-sm text-center md:text-right flex flex-col md:flex-row items-center gap-4">
+            <a href="https://www.instagram.com/lohs_legends" target="_blank" class="inline-flex items-center gap-2 hover:text-[#AA1F2E]">
+                <i class="fa-brands fa-instagram text-lg pt-0.5"></i> lohs_legends
+            </a>
+            <p class="hidden md:block">|</p>
+            <p class="text-gray-200">© 2025 SSC ❤️</p>
+        </div>
+    </div>
+</footer>
+
 
 <script>
     function countdown() {
@@ -134,6 +187,23 @@ TODO:
     }
 
     document.addEventListener('DOMContentLoaded', countdown);
+</script>
+
+
+<script>
+    function get_height() {
+        const header = document.querySelector('header');
+        const hero = document.querySelector('.hero');
+        
+        const viewport = window.innerHeight;
+        const header_height = header.offsetHeight;
+        const heroHeight = viewport - header_height;
+        
+        hero.style.height = `${heroHeight}px`;
+    }
+
+    window.addEventListener('load', get_height);
+    window.addEventListener('resize', get_height);
 </script>
 
 </html>
