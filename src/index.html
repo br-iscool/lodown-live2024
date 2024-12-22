@@ -1,3 +1,11 @@
+<!--
+TODO:
+- Style the timer and the hero section
+- Finish the hero section and improve timer section
+- Add media
+- Potentially redo navbar?
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +16,7 @@
     <link href = "style.css" rel="stylesheet">
 
     <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="../output.css" rel="stylesheet">
 
     <title>LOdown LIVE</title>
@@ -30,5 +39,101 @@
             </nav>
         </div>
     </header>
+
+
+    <div class="flex items-start justify-center w-full gap-4 absolute mt-20">
+        <div class="w-16">
+            <div class="bg-[#AA1F2E] py-4 rounded-xl overflow-hidden">
+                <h3 class="countdown-days font-semibold text-2xl text-white text-center">
+                    2
+                </h3>
+            </div>
+            <p class="text-lg font-medium text-black mt-1 text-center w-full">days</p>
+        </div>
+
+        <h3 class="font-semibold text-2xl text-gray-900 py-2.5">:</h3>
+        <div class="w-16">
+            <div class="bg-[#AA1F2E] py-4 rounded-xl overflow-hidden">
+                <h3 class="countdown-hours font-semibold text-2xl text-white text-center">
+                    23
+                </h3>
+            </div>
+            <p class="text-lg font-medium text-black mt-1 text-center w-full">hours</p>
+        </div>
+
+        <h3 class="font-semibold text-2xl text-gray-900 py-2.5">:</h3>
+        <div class="w-16">
+            <div class="bg-[#AA1F2E] py-4 rounded-xl overflow-hidden">
+                <h3 class="countdown-minutes font-semibold text-2xl text-white text-center">
+                    59
+                </h3>
+            </div>
+            <p class="text-lg font-medium text-black mt-1 text-center w-full">minutes</p>
+        </div>
+
+        <h3 class="font-semibold text-2xl text-gray-900 py-2.5">:</h3>
+        <div class="w-16">
+            <div class=" bg-[#AA1F2E] py-4 rounded-xl overflow-hidden">
+                <h3 class="countdown-seconds font-semibold text-2xl text-white text-center">
+                    59
+                </h3>
+            </div>
+            <p class="text-lg font-medium text-black mt-1 text-center w-full">seconds</p>
+        </div>
+    </div>
+                        
+
+    <div class="relative px-6 pt-14 lg:px-8">
+        <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+            <div class="text-center">
+                <h1 class="text-5xl font-semibold tracking-tight text-black sm:text-7xl">LOdown LIVE</h1>
+                <p class="mt-8 text-lg font-medium sm:text-xl/8">Random text... Random text... Random text... Random text... Random text... Random text... </p>
+                <div class="mt-10 flex items-center justify-center gap-x-6">
+                    <a href="#" class="rounded-md bg-[#AA1F2E] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#c42131]">RSVP</a>
+                    <a href="#" class="text-sm/6 font-semibold text-black">Learn more <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
+<script>
+    function countdown() {
+        const target_date = new Date("2025-01-01T07:00:00Z");
+        const days_counter = document.querySelector('.countdown-days');
+        const hours_counter = document.querySelector('.countdown-hours');
+        const minutes_counter = document.querySelector('.countdown-minutes');
+        const seconds_counter = document.querySelector('.countdown-seconds');
+
+        function update_timer() {
+            const now = new Date();
+            const difference = target_date - now;
+
+            if (difference <= 0) {
+                days_counter.textContent = '0';
+                hours_counter.textContent = '0';
+                minutes_counter.textContent = '0';
+                seconds_counter.textContent = '0';
+                clearInterval(interval);
+                return;
+            }
+
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            days_counter.textContent = days;
+            hours_counter.textContent = hours;
+            minutes_counter.textContent = minutes;
+            seconds_counter.textContent = seconds;
+        }
+
+        const interval = setInterval(update_timer, 1000);
+        update_timer();
+    }
+
+    document.addEventListener('DOMContentLoaded', countdown);
+</script>
+
 </html>
