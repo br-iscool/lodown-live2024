@@ -1,939 +1,989 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lodown Live</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="../output.css" rel="stylesheet">
-  </head>
-<!-- Header section -->
-<header class="lg:px-16 px-10 flex flex-wrap items-center py-3" style="background-color: #0C233F">
-  <div class="flex-1 flex justify-between items-center">
-      <a href="#" class="text-2xl text-white">LOdown LIVE</a>
-  </div>
-
-  <div id="menu" class="hidden md:flex md:items-center md:w-auto w-full">
-      <nav>
-          <ul class="md:flex items-center justify-between text-lg text-white-700 pt-4 md:pt-0">
-              <li><a class="md:p-4 py-3 px-0 block text-white hover:text-[#AA1F2E]" href="#">Home</a></li>
-              <li><a class="md:p-4 py-3 px-0 block text-white hover:text-[#AA1F2E]" href="#">Conference</a></li>
-              <li><a class="md:p-4 py-3 px-0 block text-white hover:text-[#AA1F2E]" href="#">Speakers</a></li>
-              <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2 text-white hover:text-[#AA1F2E]" href="#">Contact Us</a></li>
-          </ul>
-      </nav>
-  </div>
-</header>
-
-
-<body>
-  <!-- Countdown section -->
-  <div class="flex items-start justify-center w-full gap-4 absolute mt-20">
-      <div class="w-16">
-          <div class="bg-[#AA1F2E] py-4 rounded-xl overflow-hidden">
-              <h3 class="countdown-days font-semibold text-2xl text-white text-center">
-                  2
-              </h3>
-          </div>
-          <p class="text-lg font-medium text-white mt-1 text-center w-full">days</p>
-      </div>
-
-      <h3 class="font-semibold text-2xl text-white py-2.5">:</h3>
-      <div class="w-16">
-          <div class="bg-[#AA1F2E] py-4 rounded-xl overflow-hidden">
-              <h3 class="countdown-hours font-semibold text-2xl text-white text-center">
-                  23
-              </h3>
-          </div>
-          <p class="text-lg font-medium text-white mt-1 text-center w-full">hours</p>
-      </div>
-
-      <h3 class="font-semibold text-2xl text-white py-2.5">:</h3>
-      <div class="w-16">
-          <div class="bg-[#AA1F2E] py-4 rounded-xl overflow-hidden">
-              <h3 class="countdown-minutes font-semibold text-2xl text-white text-center">
-                  59
-              </h3>
-          </div>
-          <p class="text-lg font-medium text-white mt-1 text-center w-full">minutes</p>
-      </div>
-
-      <h3 class="font-semibold text-2xl text-white py-2.5">:</h3>
-      <div class="w-16">
-          <div class=" bg-[#AA1F2E] py-4 rounded-xl overflow-hidden">
-              <h3 class="countdown-seconds font-semibold text-2xl text-white text-center">
-                  59
-              </h3>
-          </div>
-          <p class="text-lg font-medium text-white mt-1 text-center w-full">seconds</p>
-      </div>
-  </div>
-                      
-  <!-- Hero section -->
-  <section id = "hero">
-    <div class="hero relative px-6 pt-14 lg:px-8" >
-        <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-            <div class="text-center">
-                <h1 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">LOdown LIVE</h1>
-                <p class="mt-8 text-lg font-medium sm:text-xl/8 text-white">Feb 16 2025 | Lillian Osborne High School</p>
-                <div class="mt-10 flex items-center justify-center gap-x-6">
-                    <a href="#" class="rounded-md bg-[#AA1F2E] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#c42131]">RSVP</a>
-                    <a href="#" class="text-sm/6 font-semibold text-white">Learn more <span aria-hidden="true">→</span></a>
-                </div>
-            </div>
-        </div>
-    </div>
-  </section>
-  <!-- Intro art-->
-  <section id = "cool-art">
-    <h1 class="text-center section-heading">7 Hours of Powerful Talks...</h1>
-    <image src = "img/fire-chicken-over-line.png"></image>
-    
-  </section>
-
-
-
-  <!-- About-->
-  <div class="container">
-    <h1 class="text-center section-heading">About LOdown</h1>
-  </div>
-   <section id="about">
-    
-      <img style = "width: 30%; justify-content: center;"src="img\fire-chicken-balloon.png">
-    
-    <div class = "container">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ipsum at, quas id
-       veritatis non assumenda adipisci cum repellendus vel in dolores dignissimos ipsam 
-       maiores nihil officia. Quisquam, sed harum?
-       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ipsum at, quas id
-       veritatis non assumenda adipisci cum repellendus vel in dolores dignissimos ipsam 
-       maiores nihil officia. Quisquam, sed harum?
-      </div>
-
-   </section>
-
-   
-
-
-
-  <!-- stats -->
-
-  <section id="stats">
-    <div class = "container">
-      
-    </div>
-    <div class = "wrapper">
-      <div class = "stats-container">
-        <i class = "fas fa-smile"></i>
-        <span class = "num" data-val="300">000</span>
-        <span class="text">Attendees</span>
-      </div>
-      <div class = "stats-container">
-        <i class = "fas fa-comment"></i>
-        <span class = "num" data-val="10">000</span>
-        <span class="text">Topics</span>
-      </div>
-
-      
-
-      <div class = "stats-container">
-        <i class = "fas fa-microphone"></i>
-        <span class = "num" data-val="25">000</span>
-        <span class="text">Talks Given</span>
-      </div>
-
-     
-    </div>
-  </section>
-
-
-    <div class = "container">
-      <h1 class="text-center section-heading">Photo Gallery</h1>
-    </div>
-    
-    <section id = "gallery">
-      
-
-      <div class="hexagon">
-        <div class="hex-border">
-          <div class="hex-content">
-            <div class="front">
-              <div class="image" style="background-image: url('img/test.jpg');"></div>
-            </div>
-            <div class="back">Side 1</div>
-          </div>
-        </div>
-      </div>
-      <div class="hexagon">
-        <div class="hex-border">
-          <div class="hex-content">
-            <div class="front">
-              <div class="image" style="background-image: url('img/test.jpg');"></div>
-            </div>
-            <div class="back">Side 2</div>
-          </div>
-        </div>
-      </div>
-      <div class="hexagon">
-        <div class="hex-border">
-          <div class="hex-content">
-            <div class="front">
-              <div class="image" style="background-image: url('img/test.jpg');"></div>
-            </div>
-            <div class="back">Side 3</div>
-          </div>
-        </div>
-      </div>
-
-  
- 
-      <div class="hexagon">
-        <div class="hex-border">
-          <div class="hex-content">
-            <div class="front">
-              <div class="image" style="background-image: url('img/test.jpg');"></div>
-            </div>
-            <div class="back">Side 1</div>
-          </div>
-        </div>
-      </div>
-      <div class="hexagon">
-        <div class="hex-border">
-          <div class="hex-content">
-            <div class="front">
-              <div class="image" style="background-image: url('img/test.jpg');"></div>
-            </div>
-            <div class="back">Side 2</div>
-          </div>
-        </div>
-      </div>
-      <div class="hexagon">
-        <div class="hex-border">
-          <div class="hex-content">
-            <div class="front">
-              <div class="image" style="background-image: url('img/test.jpg');"></div>
-            </div>
-            <div class="back">Side 3</div>
-          </div>
-        </div>
-      </div>
-      <div class="hexagon">
-        <div class="hex-border">
-          <div class="hex-content">
-            <div class="front">
-              <div class="image" style="background-image: url('img/test.jpg');"></div>
-            </div>
-            <div class="back">Side 4</div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="hexagon">
-        <div class="hex-border">
-          <div class="hex-content">
-            <div class="front">
-              <div class="image" style="background-image: url('img/test.jpg');"></div>
-            </div>
-            <div class="back">Side 1</div>
-          </div>
-        </div>
-      </div>
-      <div class="hexagon">
-        <div class="hex-border">
-          <div class="hex-content">
-            <div class="front">
-              <div class="image" style="background-image: url('img/test.jpg');"></div>
-            </div>
-            <div class="back">Side 2</div>
-          </div>
-        </div>
-      </div>
-      <div class="hexagon">
-        <div class="hex-border">
-          <div class="hex-content">
-            <div class="front">
-              <div class="image" style="background-image: url('img/test.jpg');"></div>
-            </div>
-            <div class="back">Side 3</div>
-          </div>
-        </div>
-      </div>
-  
-
-
-</section>
-
-<!-- big text-->
- 
-<section id = "big-text">
-  <h1 class="swift-up-text">The THEME for discussion this year is...</h1>
-  <div class="container">
-    <span class="animate-character">Amelioration</span>
-    <h1 class="animate-character">Perspectives on Self Improvement</h1>
-  </div>
-  
-</section>
-
-
- 
-
-
-
-
-  <div class="container">
-    <h1 class="text-center section-heading">Keynote Speakers</h1>
-  </div>
-    <section id="speakers">
-      
-      <div class="container">
-        <div class="swiper speakers-slider">
-          <div class="swiper-wrapper">
-            <!-- Slide-start -->
-            <div class="swiper-slide speakers-slide" data-title="Speaker 1" data-description="This is the first speaker.">
-              <div class="speakers-slide-img">
-                <img src="img/test.jpg" alt="speakers">
-              </div>
-              <div class="speakers-content" >
-
-                <div class="speakers-slide-content-bottom" >
-                  <h2 class="speakers-name" style="color:#aa1f2e">
-                    Speaker 1
-                  </h2>
-                  <h3 class="topic" style="color:#0c233f">
-                    <span>Topic:</span>
-                  </h3>
-                </div>
-
-              </div>
-
-
-
-              
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide speakers-slide"  data-title="Speaker 2" data-description="This is the second speaker.">
-              <div class="speakers-slide-img">
-                <img src="img/test.jpg" alt="Tranding">
-              </div>
-              <div class="speakers-content">
-
-                <div class="speakers-slide-content-bottom">
-                  <h2 class="speaker-name" style="color:#aa1f2e">
-                    Speaker 2
-                  </h2>
-                  <h3 class="topic" style="color:#0c233f">
-                    <span>Topic:</span>
-                  </h3>
-                </div>
-      
-              </div>
-
-      
-
-              
-            </div>
-            <!-- Slide-end -->
-           <!-- Slide-start -->
-           <div class="swiper-slide speakers-slide">
-            <div class="speakers-slide-img">
-              <img src="img/test.jpg" alt="Tranding">
-            </div>
-            <div class="speakers-content">
-
-              <div class="speakers-slide-content-bottom">
-                <h2 class="speaker-name" style="color:#aa1f2e">
-                  Speaker 3
-                </h2>
-                <h3 class="topic" style="color:#0c233f">
-                  <span>Topic:</span>
-                </h3>
-              </div>
-       
-            </div>
-
-            
-          </div>
-          <!-- Slide-end -->
-           <!-- Slide-start -->
-           <div class="swiper-slide speakers-slide">
-            <div class="speakers-slide-img">
-              <img src="img/test.jpg" alt="Tranding">
-            </div>
-            <div class="speakers-content">
-
-              <div class="speakers-slide-content-bottom">
-                <h2 class="speaker-name" style="color:#aa1f2e">
-                  Speaker 4
-                </h2>
-                <h3 class="topic" style="color:#0c233f">
-                  <span>Topic:</span>
-                </h3>
-              </div>
-             
-            </div>
-
-
-            
-          </div>
-          <!-- Slide-end -->
-           <!-- Slide-start -->
-           <div class="swiper-slide speakers-slide">
-            <div class="speakers-slide-img">
-              <img src="img/test.jpg" alt="Tranding">
-            </div>
-            <div class="speakers-content">
-
-              <div class="speakers-slide-content-bottom">
-                <h2 class="speaker-name" style="color:#aa1f2e">
-                  Speaker 5
-                </h2>
-                <h3 class="topic" style="color:#0c233f">
-                  <span>Topic:</span>
-                </h3>
-              </div>
-              
-            </div>
-
-
-            
-          </div>
-          <!-- Slide-end -->
-           <!-- Slide-start -->
-            <div class="swiper-slide speakers-slide"  data-title="Speaker 6" data-description="This is the 6th speaker.">
-              <div class="speakers-slide-img">
-                <img src="img/test.jpg" alt="Tranding">
-              </div>
-              <div class="speakers-content">
-
-                <div class="speakers-slide-content-bottom">
-                  <h2 class="speaker-name" style="color:#aa1f2e">
-                    Speaker 6
-                  </h2>
-                  <h3 class="topic" style="color:#0c233f">
-                    <span>Topic:</span>
-                  </h3>
-                </div>
-                
-              </div>
-
-         
-              
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide speakers-slide"  data-title="Speaker 7" data-description="This is the 7th speaker.">
-              <div class="speakers-slide-img">
-                <img src="img/test.jpg" alt="Tranding">
-              </div>
-              <div class="speakers-content">
-
-                <div class="speakers-slide-content-bottom">
-                  <h2 class="speaker-name" style="color:#aa1f2e">
-                    Speaker 7
-                  </h2>
-                  <h3 class="topic" style="color:#0c233f">
-                    <span>Topic:</span>
-                  </h3>
-                </div>
-           
-              </div>
-
-           
-
-              
-            </div>
-            <!-- Slide-end -->
-          </div>
-
-          <div class="speakers-slider-control">
-            <div class="swiper-button-prev slider-arrow">
-              <i class="fa-solid fa-arrow-left"></i>
-            </div>
-            <div class="swiper-button-next slider-arrow">
-              <i class="fa-solid fa-arrow-right"></i>
-              
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-
-        </div>
-      </div>
-      <div class = "modern-box">
-        <h2 class="title"></h2>
-        <p class="description"></p>
-      </div>
-    </section>
-
-
-
-    <!-- TIMELINE -->
-    <div class = "container">
-      <h1 class="text-center section-heading">Schedule</h1>
-  </div>
-    <section class="timeline">
-      
-
-      <div class="timeline-item">
-          <h3>10:00 AM - Event</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="timeline-item">
-          <h3>11:00 AM - Event</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="timeline-item">
-          <h3>12:30 PM - Event</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="timeline-item">
-          <h3>2:00 PM - Event</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="timeline-item">
-          <h3>3:30 PM - Event</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="timeline-item">
-          <h3>6:00 PM - Event</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-    
-  </section>
-
-
-
-
-  <!-- Break art-->
-  <section id = "break-art">
-    <img style="width: 100%; height:100%;"src="img\bird-on-stage.png">
-  </section>
-
-
-  <!-- ABOUT THE SSC-->
-  <div class = "container">
-    <h1 class="text-center section-heading">About the SSC</h1>
-</div>
-  <section id="about-the-ssc">
-    
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate 
-    mollitia fugiat esse, nulla possimus sit minima commodi sed debitis, 
-    voluptates quos iste modi architecto. Necessitatibus commodi dolorem nihil quidem!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate 
-    mollitia fugiat esse, nulla possimus sit minima commodi sed debitis, 
-    voluptates quos iste modi architecto. Necessitatibus commodi dolorem nihil quidem!
-    </div>
-     <!-- Break art-->
-    <section id = "break-art">
-      <img style = "width: 70%; justify-content: center;"src="img\fire-chicken-balloon.png">
-    </section>
-    <!-- OUR TEAM -->
-  </section>
-  <section id="our-team">
-    <div class = "container">
-        <h1 class="text-center section-heading">Our Team</h1>
-    </div>
-    <div class="container">
-        <div class="box">
-            <img src="img\test.jpg" class="fade-image">
-            <h3>Name</h3>
-            <h5>Role</h5>
-            <div class = "icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                
-            </div>
-        </div>
-        <div class="box">
-            <img src="img\test.jpg" class="fade-image">
-            <h3>Name</h3>
-            <h5>Role</h5>
-            <div class = "icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                
-            </div>
-        </div>
-        <div class="box">
-            <img src="img\test.jpg" class="fade-image">
-            <h3>Name</h3>
-            <h5>Role</h5>
-            <div class = "icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                
-            </div>
-        </div>
-        <div class="box">
-            <img src="img\test.jpg" class="fade-image">
-            <h3>Name</h3>
-            <h5>Role</h5>
-            <div class = "icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                
-            </div>
-        </div>
-        <div class="box">
-          <img src="img\test.jpg" class="fade-image">
-          <h3>Name</h3>
-          <h5>Role</h5>
-          <div class = "icons">
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-              
-          </div>
-      </div>
-      <div class="box">
-        <img src="img\test.jpg" class="fade-image">
-        <h3>Name</h3>
-        <h5>Role</h5>
-        <div class = "icons">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            
-        </div>
-      </div>
-
-    </div>
-
-
-
-    <div class="container">
-      <div class="box">
-          <img src="img\test.jpg" class="fade-image">
-          <h3>Name</h3>
-          <h5>Role</h5>
-          <div class = "icons">
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-              
-          </div>
-      </div>
-      <div class="box">
-          <img src="img\test.jpg" class="fade-image">
-          <h3>Name</h3>
-          <h5>Role</h5>
-          <div class = "icons">
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-              
-          </div>
-      </div>
-      <div class="box">
-          <img src="img\test.jpg" class="fade-image">
-          <h3>Name</h3>
-          <h5>Role</h5>
-          <div class = "icons">
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-              
-          </div>
-      </div>
-      <div class="box">
-          <img src="img\test.jpg" class="fade-image">
-          <h3>Name</h3>
-          <h5>Role</h5>
-          <div class = "icons">
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-              
-          </div>
-      </div>
-      <div class="box">
-        <img src="img\test.jpg" class="fade-image">
-        <h3>Name</h3>
-        <h5>Role</h5>
-        <div class = "icons">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            
-        </div>
-    </div>
-    <div class="box">
-      <img src="img\test.jpg" class="fade-image">
-      <h3>Name</h3>
-      <h5>Role</h5>
-      <div class = "icons">
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          
-      </div>
-    </div>
-
-  </div>
-  <div class="container">
-    <div class="box">
-        <img src="img\test.jpg" class="fade-image">
-        <h3>Name</h3>
-        <h5>Role</h5>
-        <div class = "icons">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            
-        </div>
-    </div>
-    <div class="box">
-        <img src="img\test.jpg" class="fade-image">
-        <h3>Name</h3>
-        <h5>Role</h5>
-        <div class = "icons">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            
-        </div>
-    </div>
-    <div class="box">
-        <img src="img\test.jpg" class="fade-image">
-        <h3>Name</h3>
-        <h5>Role</h5>
-        <div class = "icons">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            
-        </div>
-    </div>
-    <div class="box">
-        <img src="img\test.jpg" class="fade-image">
-        <h3>Name</h3>
-        <h5>Role</h5>
-        <div class = "icons">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            
-        </div>
-    </div>
-    <div class="box">
-      <img src="img\test.jpg" class="fade-image">
-      <h3>Name</h3>
-      <h5>Role</h5>
-      <div class = "icons">
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          
-      </div>
-  </div>
-  <div class="box">
-    <img src="img\test.jpg" class="fade-image">
-    <h3>Name</h3>
-    <h5>Role</h5>
-    <div class = "icons">
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        
-    </div>
-  </div>
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-    <!-- SPONSERS -->
-    <section id="sponsers">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lodown Live</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="style.css" />
+
+		<!-- Tailwind CSS -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link href="../output.css" rel="stylesheet" />
+	</head>
+
+	<!-- Header section -->
+	<header class="lg:px-16 px-10 flex flex-wrap items-center py-3" style="background-color: #0c233f">
+		<div class="flex-1 flex justify-between items-center">
+			<a href="#" class="text-2xl text-white">
+                <img src="../app/logo.png" alt="logo" style="width: 100%; height: 40px" />
+            </a>    
+		</div>
+		<div id="menu" class="hidden md:flex md:items-center md:w-auto w-full">
+			<nav>
+				<ul class="md:flex items-center justify-between text-lg text-white-700 pt-4 md:pt-0">
+					<li><a class="md:p-4 py-3 px-0 block text-white hover:text-[#AA1F2E]" href="#">Home</a></li>
+					<li><a class="md:p-4 py-3 px-0 block text-white hover:text-[#AA1F2E]" href="#speakers">Speakers</a></li>
+					<li><a class="md:p-4 py-3 px-0 block text-white hover:text-[#AA1F2E]" href="#faq">FAQ</a></li>
+					<li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2 text-white hover:text-[#AA1F2E]" href="#contact">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<body>
+		<!-- Countdown section -->
+		<div class="flex items-start justify-center w-full gap-4 absolute mt-20">
+			<div class="w-16">
+				<div class="bg-[#AA1F2E] py-4 rounded-xl overflow-hidden">
+					<h3 class="countdown-days font-semibold text-2xl text-white text-center">2</h3>
+				</div>
+				<p class="text-lg font-medium text-white mt-1 text-center w-full">days</p>
+			</div>
+			<h3 class="font-semibold text-2xl text-white py-2.5">:</h3>
+			<div class="w-16">
+				<div class="bg-[#AA1F2E] py-4 rounded-xl overflow-hidden">
+					<h3 class="countdown-hours font-semibold text-2xl text-white text-center">23</h3>
+				</div>
+				<p class="text-lg font-medium text-white mt-1 text-center w-full">hours</p>
+			</div>
+			<h3 class="font-semibold text-2xl text-white py-2.5">:</h3>
+			<div class="w-16">
+				<div class="bg-[#AA1F2E] py-4 rounded-xl overflow-hidden">
+					<h3 class="countdown-minutes font-semibold text-2xl text-white text-center">59</h3>
+				</div>
+				<p class="text-lg font-medium text-white mt-1 text-center w-full">minutes</p>
+			</div>
+			<h3 class="font-semibold text-2xl text-white py-2.5">:</h3>
+			<div class="w-16">
+				<div class="bg-[#AA1F2E] py-4 rounded-xl overflow-hidden">
+					<h3 class="countdown-seconds font-semibold text-2xl text-white text-center">59</h3>
+				</div>
+				<p class="text-lg font-medium text-white mt-1 text-center w-full">seconds</p>
+			</div>
+		</div>
+
+		<!-- Hero section -->
+		<section id="hero">
+			<div class="hero relative px-6 pt-14 lg:px-8">
+				<div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+					<div class="text-center">
+						<h1 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">LOdown LIVE</h1>
+						<p class="mt-8 text-lg font-medium sm:text-xl/8 text-white">Feb 16 2025 | Lillian Osborne High School</p>
+						<div class="mt-10 flex items-center justify-center gap-x-6">
+							<a href="#" class="rounded-md bg-[#AA1F2E] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#c42131]">RSVP</a>
+							<a href="#about" class="text-sm/6 font-semibold text-white">Learn more<span aria-hidden="true"> →</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="separator"></div>
+
+		<!-- Intro art-->
+		<section id="cool-art">
+			<h1 class="text-center section-heading">7 Hours of Powerful Talks...</h1>
+			<image src="../app/fire-chicken-over-line.png"></image>
+		</section>
+
+		<!-- About-->
+		<div class="container">
+			<a href="" id="about"></a>
+			<h1 class="text-center section-heading">About LOdown</h1>
+		</div>
+		<section id="about">
+			<img src="../app/fire-chicken-balloon.png" />
+			<p>
+				We're happy to be hosting our 2nd annual LOdown LIVE! This conference was created by the Student Solidarity Committee. This Committee works towards social action awareness and education, inclusion and anti-racism and equity at Lillian
+				Osborne High School. With the support of the Parent Council and staff we were able create a space for speakers to share innovative ideas to help to inspire and engage the community in conversations. We hope to bring together bright
+				minds to give focused talks on a wide range of subjects, to foster learning and provoke conversation that matter. Our main theme this year is Amelioration: Perspectives on Self Improvement.
+            </p>
+		</section>
+
+		<!-- stats -->
+		<section id="stats">
+			<div class="container"></div>
+			<div class="wrapper">
+				<div class="stats-container">
+					<i class="fas fa-smile"></i>
+					<span class="num" data-val="300">000</span>
+					<span class="text">Attendees</span>
+				</div>
+				<div class="stats-container">
+					<i class="fas fa-comment"></i>
+					<span class="num" data-val="10">000</span>
+					<span class="text">Topics</span>
+				</div>
+				<div class="stats-container">
+					<i class="fas fa-microphone"></i>
+					<span class="num" data-val="25">000</span>
+					<span class="text">Talks Given</span>
+				</div>
+			</div>
+		</section>
+
+		<!-- Gallery -->
+		<!--
         <div class = "container">
-            <h1 class="text-center section-heading">Sponsors</h1>
+            <h1 class="text-center section-heading">Photo Gallery</h1>
         </div>
-        <div class="container">
-            <div class="block">
-                <img src="img\test.jpg" alt="Image 1" class="fade-image">
+        <section id = "gallery">
+            <div class="hexagon">
+            <div class="hex-border">
+                <div class="hex-content">
+                <div class="front">
+                    <div class="image" style="background-image: url('../app/test.jpg');"></div>
+                </div>
+                <div class="back">Side 1</div>
+                </div>
             </div>
-            <div class="block">
-                <img src="img\test.jpg" alt="Image 2" class="fade-image">
             </div>
-            <div class="block">
-                <img src="img\test.jpg" alt="Image 3" class="fade-image">
+            <div class="hexagon">
+            <div class="hex-border">
+                <div class="hex-content">
+                <div class="front">
+                    <div class="image" style="background-image: url('../app/test.jpg');"></div>
+                </div>
+                <div class="back">Side 2</div>
+                </div>
             </div>
-            <div class="block">
-                <img src="img\test.jpg" alt="Image 4" class="fade-image">
             </div>
-            <div class="block">
-                <img src="img\test.jpg" alt="Image 5" class="fade-image">
+            <div class="hexagon">
+            <div class="hex-border">
+                <div class="hex-content">
+                <div class="front">
+                    <div class="image" style="background-image: url('../app/test.jpg');"></div>
+                </div>
+                <div class="back">Side 3</div>
+                </div>
             </div>
-        </div>
-
-    </section>
-
-
-    
-
-    <div class = "container">
-      <h1 class="text-center section-heading">FAQ</h1>
-    </div>
-    <section class="faq">
-      <div class="accordion-container">
-          <details open>
-            <summary>
-              <span class="accordion-title">
-                What is LOdown LIVE
-              </span>
-              <span class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M6 9l6 6l6 -6" />
-                </svg></span>
-            </summary>
-            <div class="accordion-content">
-              LOdown LIVE is our school’s annual conference event, where we seek to elevate youth voices by providing a platform for students to speak and learn from esteemed community members. We invite speakers from across Alberta to share their experience. 
-
             </div>
-          </details>
-          <details>
-            <summary>
-              <span class="accordion-title">Will There Be Food At This Event + What Time:</span>
-              <span class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M6 9l6 6l6 -6" />
-                </svg></span>
-            </summary>
-            <div class="accordion-content">LOdown LIVE provides a variety of snacks, lunch, and dinner from various places. LOdown LIVE is committed to providing a space for individuals to network and gain more knowledge and experience from others over the medium of food. Our dinner will take place at 5:30 P.M and will be provided for everyone. </div>
-          </details>
-          <details>
-            <summary>
-              <span class="accordion-title">What is the Format of LOdown LIVE? </span>
-              <span class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M6 9l6 6l6 -6" />
-                </svg></span>
-            </summary>
-            <div class="accordion-content">LOdown LIVE starts at 10:40 AM. We will have our constituent schools in the building. Those who 
+            <div class="hexagon">
+            <div class="hex-border">
+                <div class="hex-content">
+                <div class="front">
+                    <div class="image" style="background-image: url('../app/test.jpg');"></div>
+                </div>
+                <div class="back">Side 1</div>
+                </div>
             </div>
-          </details>
-          <details>
-            <summary>
-              <span class="accordion-title">Where is LOdown LIVE taking place?</span>
-              <span class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M6 9l6 6l6 -6" />
-                </svg></span>
-            </summary>
-            <div class="accordion-content">LOdown LIVE is hosted by the Student Solidarity Committee it at Lillian Obsfer ej deez nuts High school at McLab and Library different people type shi</div>
-          </details>
-          <details>
-            <summary>
-              <span class="accordion-title">How Do I Become a Volunteer?</span>
-              <span class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M6 9l6 6l6 -6" />
-                </svg></span>
-            </summary>
-            <div class="accordion-content">For everyone interested in volunteering, we are currently accepting applications</div>
-          </details>
-          <details>
-            <summary>
-              <span class="accordion-title">How Do I Become A Speaker?</span>
-              <span class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M6 9l6 6l6 -6" />
-                </svg></span>
-            </summary>
-            <div class="accordion-content">We are currently looking for a ____ speaker in our community who is interested in speaking about the drive to self-improvement relative to ____. To become a speaker at LOdown LIVE, we have an application form and encourage everyone to sign up. Additionally, we ask everyone to attach a copy of their biography.</div>
-          </details>
+            </div>
+            <div class="hexagon">
+            <div class="hex-border">
+                <div class="hex-content">
+                <div class="front">
+                    <div class="image" style="background-image: url('../app/test.jpg');"></div>
+                </div>
+                <div class="back">Side 2</div>
+                </div>
+            </div>
+            </div>
+            <div class="hexagon">
+            <div class="hex-border">
+                <div class="hex-content">
+                <div class="front">
+                    <div class="image" style="background-image: url('../app/test.jpg');"></div>
+                </div>
+                <div class="back">Side 3</div>
+                </div>
+            </div>
+            </div>
+            <div class="hexagon">
+            <div class="hex-border">
+                <div class="hex-content">
+                <div class="front">
+                    <div class="image" style="background-image: url('../app/test.jpg');"></div>
+                </div>
+                <div class="back">Side 4</div>
+                </div>
+            </div>
+            </div>
+            <div class="hexagon">
+            <div class="hex-border">
+                <div class="hex-content">
+                <div class="front">
+                    <div class="image" style="background-image: url('../app/test.jpg');"></div>
+                </div>
+                <div class="back">Side 1</div>
+                </div>
+            </div>
+            </div>
+            <div class="hexagon">
+            <div class="hex-border">
+                <div class="hex-content">
+                <div class="front">
+                    <div class="image" style="background-image: url('../app/test.jpg');"></div>
+                </div>
+                <div class="back">Side 2</div>
+                </div>
+            </div>
+            </div>
+            <div class="hexagon">
+            <div class="hex-border">
+                <div class="hex-content">
+                <div class="front">
+                    <div class="image" style="background-image: url('../app/test.jpg');"></div>
+                </div>
+                <div class="back">Side 3</div>
+                </div>
+            </div>
+            </div>
+        </section>
+        -->
 
-          <details>
-            <summary>
-              <span class="accordion-title">How Was the Theme Chosen For This Year?</span>
-              <span class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M6 9l6 6l6 -6" />
-                </svg></span>
-            </summary>
-            <div class="accordion-content">Lillian Osborne is home to many aspiring students brimming with initiative and drive. From student associations cultivating a community, to STEM researchers making an impact in the scientific field for the betterment of society, everyone here is consistently improving themselves to fit the vision that they want to create, and that's something unique to Osborne-- something you can't find anywhere else. We chose the theme to foster the drive and leadership home at Lillian Osborne to the next level.</div>
-          </details>
-          <details>
-            <summary>
-              <span class="accordion-title">How does LOdown LIVE aim to elevate youth voices through its platform?</span>
-              <span class="accordion-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M6 9l6 6l6 -6" />
-                </svg></span>
-            </summary>
-            <div class="accordion-content">LOdown LIVE aims to have people from numerous backgrounds with different experiences share their ideas regarding self-improvement. Many of our speakers are students from our schools or youth in our community who strive to share their everyday experiences. We aim to foster their voice through LOdown LIVE.</div>
-          </details>
-          
-        </div>
-  </section>
+		<!-- Theme text -->
+		<section id="big-text">
+			<h1 class="swift-up-text">The THEME for discussion this year is...</h1>
+			<div class="container">
+				<span class="animate-character">Amelioration</span>
+				<h1 class="animate-character">Perspectives on Self Improvement</h1>
+			</div>
+		</section>
 
+		<!-- Keynote speakers -->
+		<div class="container">
+			<h1 class="text-center section-heading">Keynote Speakers</h1>
+		</div>
 
+		<section id="speakers">
+			<div class="container">
+				<div class="swiper speakers-slider">
+					<div class="swiper-wrapper">
+						<!-- Slide-start -->
+						<div
+							class="swiper-slide speakers-slide"
+							data-title="Mehak Sharma"
+							data-description="Mehak Sharma is a first-year Bachelor of Commerce student at the University of Alberta and the CEO of Aura, a youth-led business promoting well-being, sustainability, and inclusivity. Through Aura, she has developed and sold mental wellness products, generating revenue while making a social impact. An aspiring law student, she is passionate about advocacy and leadership, having held various roles in community organizations. Outside of business and law, she explores diverse interests, including modeling and competitive fighting, which reflect her creativity and discipline. With an entrepreneurial mindset and a commitment to meaningful change, she strives to make a lasting impact."
+						>
+							<div class="speakers-slide-img">
+								<img src="../app/speakers/may sharma - Mehak Sharma.jpg" alt="speakers" />
+							</div>
+						</div>
+						<!-- Slide-end -->
 
-  <section>
+						<!-- Slide-start -->
+						<div
+							class="swiper-slide speakers-slide"
+							data-title="Gajani Kajanthan"
+							data-description="
+                            Gajani Kajanthan is an inquisitive and driven grade 11 student at Lillian Osborne High School with a deep passion for science and literature. Her love for learning goes beyond the classroom, as she eagerly takes on challenges that expand her intellectual horizons. She has a keen interest in psychology and neurology, fascinated by the complexities of the human mind. Dedicated to making a difference, Gajani actively participates in volunteer work, contributing to school events and community initiatives. She is always looking for ways to grow and engage with her interests, striving to make a positive impact through her dedication and curiosity."
+						>
+							<div class="speakers-slide-img">
+								<img src="../app/speakers/Gajani_Kajanthan - Gajani Kajanthan.jpg" alt="Tranding" />
+							</div>
+						</div>
+						<!-- Slide-end -->
 
+						<!-- Slide-start -->
+						<div
+							class="swiper-slide speakers-slide"
+                            id="speaker-3"
+							data-title="Lillah Penddah"
+							data-description="
+                            I am the CEO + FOUNDER of AFRO-FACTS.
+                            At AFRO FACTS, we create
+                            effective teaching tools
+                            that use a collaborative
+                            approach to help people
+                            increase their awareness
+                            with respect to Black
+                            History and diversity,
+                            equity, and inclusion (DEI).
 
-  </section>
+                            I saw that there was a lack
+                            of Black History education
+                            in schools and felt that this
+                            was a need I could fill.
+                            Over a 10-year period I
+                            worked to create an
+                            educational tool played as
+                            a game that could be used
+                            to educate the masses on
+                            the strength, history,
+                            culture, and contributions
+                            of people of African
+                            descent and the diaspora.
 
+                            As public speaker and TEDx
+                            speaker in the diversity,
+                            equity, inclusion &
+                            belonging space, I am
+                            committed to changing the
+                            world by creating safe
+                            spaces for facilitating
+                            conversations about race,
+                            systemic racism, and our
+                            own unconscious biases. I
+                            assist people with building
+                            their confidence and
+                            feeling empowered to have
+                            DEIB conversations
+                            respectfully by providing
+                            them with the tools needed
+                            to remove the discomfort
+                            they feel and de-escalate
+                            heightened emotions with
+                            respect to uncomfortable
+                            Conversations.
+                        "
+						>
+							<div class="speakers-slide-img">
+								<img src="../app/speakers/E5R5A45601 - Lillah Penddah.jpg" alt="Tranding" />
+							</div>
+						</div>
+						<!-- Slide-end -->
 
+						<!-- Slide-start -->
+						<div class="swiper-slide speakers-slide" data-title="Methuli Liyanage" data-description="Methuli Liyanage is a dedicated high school student with a passion for leadership and community engagement. Having recently moved from Sri Lanka to Canada, she joined Lillian Osborne High School in October 2024 and quickly became involved in various activities. She is a member of the LOHS Post club, where she writes articles on topics relevant to high school students, and Students for the Community, contributing to meaningful initiatives. In Sri Lanka, she served as a senior prefect at her previous school and actively participated in drama and debating, developing strong leadership and communication skills. She was also a senior guide, engaging in volunteer service and community support efforts, further strengthening her commitment to making a positive impact. Selected as a speaker for LOdown LIVE, Methuli aims to highlight the power of small actions in creating lasting change within communities.
+">
+							<div class="speakers-slide-img">
+								<img src="../app/speakers/Photo - Methuli Liyanage.jpeg" alt="Tranding" />
+							</div>
+						</div>
+						<!-- Slide-end -->
 
+						<!-- Slide-start -->
+						<div class="swiper-slide speakers-slide" data-title="Green Humane Group" data-description="Gabriel Worsley-Dragland is a 3rd year University of Alberta student studying Biology and Physical Sciences who is passionate about environmental sustainability. He was a member of his university's student union sustainability group in recent years and a co-founder of the Green Humane Group alongside his brother, Tynan. Gabriel has engaged in two years of theoretical chemistry research at the UoA with a focus on micellar drug diffusion dynamics and carbon capture by metal-organic frameworks.
+">
+							<div class="speakers-slide-img">
+								<img src="../app/speakers/IMG_5378 - Gabe Worsley-Dragland.jpg" alt="Tranding" />
+							</div>
+						</div>
+						<!-- Slide-end -->
 
+						<!-- Slide-start -->
+						<div class="swiper-slide speakers-slide" data-title="Dylan Nkala" data-description="
+I am a Director at The Young Afro Canadian Organization. Which works with youths between 15-30 in not only getting into post secondary but transitioning a degree into a job opportunity and ultimately helping grow representation in our community and minimizing the youth that fall through the cracks.
+">
+							<div class="speakers-slide-img">
+								<img src="../app/speakers/17383561432744574391708990146665 - Dylan Nkala.jpg" alt="Tranding" />
+							</div>
+						</div>
+						<!-- Slide-end -->
 
+						<!-- Slide-start -->
+						<div class="swiper-slide speakers-slide" data-title="Essica Cheung" data-description="Essica Cheung is a first year Media Studies student at the University of Alberta, but she will be switching over to pursue a Bachelor of Education in the fall specializing in elementary education. She is a Director of External Events at TEDxUAlberta as well as an avid member of the UofA’s Club Periodically, and has been a volunteer at The Today Centre for almost four years. Her passion for leadership and volunteering helped her become a 2024 Michael A. Strembitsky Award Nominee. Essica’s past speaking experience includes being a speaker at an EDI summit in 2024 and emceeing for events both in and out of school such as at the Chinese Pavilion during the Edmonton Heritage Festival. ">
+							<div class="speakers-slide-img">
+								<img src="../app/speakers/SSCPORTRAIT - Essica Cheung.JPG" alt="Tranding" />
+							</div>
+						</div>
+						<!-- Slide-end -->
+                        <!-- Slide-start -->
+						<div class="swiper-slide speakers-slide" data-title="Jorge Sanchez Perez" data-description="Jorge Sanchez Perez is an Assistant Professor of Philosophy at the University of Alberta. He works on Social Epistemology, Legal and Political Philosophy, Indigenous Philosophy, and Latin American Philosophy. His work focuses on bridging tensions between Western and Indigenous philosophical views from across the world. He has published different papers on philosophical methodology, Indigenous philosophies and political philosophy. He is currently working on reconstructing Andean philosophical views via analyzing the Huarochirí Manuscript as a primary source.">
+							<div class="speakers-slide-img">
+								<img src="../app/speakers/JHSP - Jorge Sanchez Perez.jpg" alt="Tranding" />
+							</div>
+						</div>
+						<!-- Slide-end -->
+                         <!-- Slide-start -->
+						<div class="swiper-slide speakers-slide" data-title="Jack Zupko" data-description="Jack Zupko is Professor of Philosophy at the University of Alberta.  He is a graduate of the University of Waterloo (BA) and Cornell University (MA, PhD), specializing in medieval philosophy.  He has published many research articles and five books.  He has served as subject editor for the Stanford Encyclopedia of Philosophy since 1998 as well as Editor (2015-20) of the Journal of the History of Philosophy.  Professor Zupko received awards for his teaching while on the faculties of Emory University and San Diego State University. Prior to joining the University of Alberta in 2013, he was Chair of the Philosophy Department at the University of Winnipeg.">
+							<div class="speakers-slide-img">
+								<img src="../app/speakers/JAZ headshot - Jack Zupko.jpeg" alt="Tranding" />
+							</div>
+						</div>
+						<!-- Slide-end -->
+                         <!-- Slide-start -->
+						<div class="swiper-slide speakers-slide" data-title="Jordon Hon" data-description="Jordon Hon 韓寶軒 (he/him) is a visual artist and community organizer born and raised in amiskwaciwâskahikan / Edmonton with Hong Kong Cantonese roots.
 
-    
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+He photographs daily life while also curating local experiences to bring people together. Photography is a practice that grounds him, connects him to his community, and gives him a way to explore who he is. Jordon believes in collective solidarity leading to liberation for all. He often looks for evidence of this or the absence of this notion in our world to guide where he and his camera go. Making art to serve as “an axe for the frozen sea within us”.
 
-  <!-- Footer section -->
-<footer class="bg-[#0C233F] text-white py-8">
-  <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center px-6 gap-8">
-      
-      <!-- Location section -->
-      <div class="text-sm">
-          <h3 class="text-lg font-semibold mb-2">Location</h3>
-          
-          <div class="group relative">
-              <a href="https://maps.app.goo.gl/c2qkLpWa9PBvb5L7A" target="_blank" class="block">
-                  2019 Leger Rd NW
-              </a>
-              <a href="https://maps.app.goo.gl/c2qkLpWa9PBvb5L7A" target="_blank" class="block">
-                  Edmonton, AB T6R 0R9
-              </a>
-      
-              <!-- Google maps tooltip -->
-              <span class="absolute top-1/2 -translate-y-1/2 translate-x-40 px-3 py-2 text-xs bg-white text-black rounded opacity-0 group-hover:opacity-100 transition-opacity">
-                  Open in Google Maps
-              </span>
-          </div>
-      </div>
-      
-      <!-- Get in touch section -->
-      <div class="text-sm text-center pl-24">
-          <h3 class="text-lg font-semibold mb-2">Get in Touch</h3>
-          <a href="https://lillianosborne.epsb.ca/" target="_blank" class="hover:text-[#AA1F2E] underline">lillianosborne.epsb.ca</a>
-          <p>
-              <a href="mailto:lohs.ssc@gmail.com" class="hover:text-[#AA1F2E] underline">lohs.ssc@gmail.com</a>  
-              <span>|</span>  
-              <a href="tel:7803912450" class="hover:text-[#AA1F2E] underline">780-391-2450</a>
-          </p>
-      </div>
+Jordon has been involved in Edmonton's Chinatown community since 2021 and doesn't see himself slowing down. His various creative projects include: A Portrait of Chinatown docu-series, Untouchable Chinatown book and exhibition, Dragon Fried Rice art exhibition, Harm Reduction x Chinatown film screening, Storytelling in Chinatown from Within, (Not Your Average) Lunar New Year Banquet, Azure Dragon of the East short film, and What We Carry 唐人街 art exhibition.
+">
+							<div class="speakers-slide-img">
+								<img src="../app/speakers/Jordon Hon Artist Portrait - Jordon Hon.jpg" alt="Tranding" />
+							</div>
+						</div>
+						<!-- Slide-end -->
+                         <!-- Slide-start -->
+						<div class="swiper-slide speakers-slide" data-title="Emily Chu" data-description="Emily Chu is an award-winning Chinese illustrator and visual artist based on Treaty 6/Edmonton. Emily's practice includes commercial illustration, murals, storytelling, sketching, and community-arts initiatives. Emily is the founder and lead organizer of Chinatown's newest Lunar New Year Market: Togather Chinatown Arts Festival, and storytelling map project: Chinatown Stories Map. She is currently working on a graphic novel about growing up as a new immigrant in the Alberta prairies in the early 90's - A portion of that project will be featured as a mural at the main hall of the AGA in late March, 2025. 
+">
+							<div class="speakers-slide-img">
+								<img src="../app/speakers/373A7204-15 2 - Emily Chu.jpg" alt="Tranding" />
+							</div>
+						</div>
+						<!-- Slide-end -->
+                         <!-- Slide-start -->
+						<div class="swiper-slide speakers-slide speaker-12" data-title="Kathryn Gwun-Yeen Lennon" data-description="Kathryn has worked at the intersections of community planning, community engagement, research and communications for over a decade. She loves working collaboratively to bring projects to life, especially when they relate to placemaking, food, community-building, and storytelling. A common thread in much of her work is food systems planning, intercultural planning, community and urban planning, and civic participation. With an eye to equity, diversity and inclusion, she has been privileged to work with and for a wide range of organizations and audiences, including the public sector, private sector, and nonprofit sector, working with arts, advocacy, multicultural, and grassroots organizations. She is also a poet, writer, and the co-editor and co-founder of Hungry Zine, an award-winning, community-focused food publication. She holds a MA in Planning from UBC's School of Community and Regional Planning, and a Bachelor of Environment from the University of Waterloo. She was born and raised in Edmonton/Amiskwacîwâskahikan, Treaty 6 Territory and Métis Region Zone 4, with mixed Hong-Kong Cantonese and Irish settler ancestry. ">
+							<div class="speakers-slide-img">
+								<img src="../app/speakers/Kathryn+Kyla_Oct2023Portraits-82 - Kathryn Gwun-Yeen Lennon.jpg" alt="Tranding" />
+							</div>
+						</div>
+						<!-- Slide-end -->
+                         <!-- Slide-start -->
+						<div class="swiper-slide speakers-slide" data-title="Yihua Zhang" data-description="Yihua Zhang is an Edmonton based facilitator, community organizer, and artist. Originally from Gansu province, Yihua moved to the city at age 8 and has called Edmonton home ever since. In search of connection to identity and culture, Yihua got involved in Chinatown in 2021 and has been involved in several projects. Most recently, they were one of the organizers for the Chinatown Care Package Series from Aiya Collective. Yihua is passionate about exploring the cross sections of identity, power, and justice and building a path towards collective liberation.">
+							<div class="speakers-slide-img">
+								<img src="../app/speakers/IMG_20200917_154218 - Yihua Zhang.jpg" alt="Tranding" />
+							</div>
+						</div>
+						<!-- Slide-end -->
+					</div>
 
-      <!-- Instagram and copyright section -->
-      <div class="text-sm text-center md:text-right flex flex-col md:flex-row items-center gap-4">
-          <a href="https://www.instagram.com/lohs_legends" target="_blank" class="inline-flex items-center gap-2 hover:text-[#AA1F2E]">
-              <i class="fa-brands fa-instagram text-lg pt-0.5"></i> lohs_legends
-          </a>
-          <p class="hidden md:block">|</p>
-          <p class="text-white-200">© 2025 SSC ❤️</p>
-      </div>
-  </div>
-</footer>
+					<div class="speakers-slider-control">
+						<div class="swiper-button-prev slider-arrow">
+							<i class="fa-solid fa-arrow-left"></i>
+						</div>
+						<div class="swiper-button-next slider-arrow">
+							<i class="fa-solid fa-arrow-right"></i>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
 
+			<div class="modern-box">
+				<h2 class="title"></h2>
+				<p class="description"></p>
+			</div>
+		</section>
 
-<script>
-  
-</script>
+		<!-- Schedule -->
+		<div class="container">
+			<h1 class="text-center section-heading">Schedule</h1>
+		</div>
+		<section class="timeline">
+			<div class="timeline-item">
+				<h3>11:00 AM - Keynote Speaker</h3>
+				<p>Jujie Luan, Fencing Olympic Gold Medallist, in the theatre.</p>
+			</div>
+			<div class="timeline-item">
+				<h3>11:30 AM - Speaker</h3>
+				<p>Panel Discussion: UofA Philosophy Professors, in the theatre.</p>
+                <p>Gajani Kajanthan, in the library.</p>
+			</div>
+			<div class="timeline-item">
+				<h3>12:00 PM - Speaker</h3>
+				<p>Dylan Mykala: EDI Speaker, in the theatre.</p>
+                <p>Methuli Liyanage, in the library.</p>
+			</div>
+			<div class="timeline-item">
+				<h3 style="margin-bottom: 0px;">12:30 PM - Lunch</h3>
+			</div>
+			<div class="timeline-item">
+				<h3>1:30 PM - Keynote Speaker</h3>
+				<p>Peter Silverstone, UofA, in the theatre.</p>
+			</div>
+			<div class="timeline-item">
+				<h3>2:10 PM - Speaker</h3>
+				<p>Lillah Penddah: AFRO-FACTS, in the theatre.</p>
+                <p>Green Humane Group: Tynan and Gabe, in the library</p>
+			</div>
+            <div class="timeline-item">
+				<h3>3:10 PM - Panel Discussion + Speaker</h3>
+				<p>Art in Chinatown | EDI Journey, in the theatre.</p>
+                <p>May Sharma: LOHS Alumni, in the library.</p>
+			</div>
+            <div class="timeline-item">
+				<h3 style="margin-bottom: 0px;">4:10 PM - Transition to Open Conference</h3>
+			</div>
+            <div class="timeline-item">
+				<h3>4:20 PM - Keynote Speaker</h3>
+				<p>Andy Greenshaw, UofA, in the theatre.</p>
+			</div>
+            <div class="timeline-item">
+				<h3>4:50 PM - Speaker</h3>
+				<p>Don Patterson, in the theatre.</p>
+			</div>
+            <div class="timeline-item">
+				<h3 style="margin-bottom: 0px;">5:30 PM - Dinner</h3>
+			</div>
+		</section>
 
+		<!-- Break art-->
+		<section id="break-art">
+			<img style="width: 100%; height: 100%" src="../app/bird-on-stage.png" />
+		</section>
 
-<script>
-  
-</script>
+		<!-- ABOUT THE SSC-->
+		<div class="container">
+			<h1 class="text-center section-heading">About the SSC</h1>
+		</div>
+		<section id="about-the-ssc">
+            <p>
+                The Student Solidarity Committee (SSC) acknowledges the struggles of the students staff in our school, so our mission is to harness the social justice passion in our students and turn it into concrete actions to help both individuals and
+                groups, especially those who belong to minorities, in our local community.
+            </p>
+			<!-- Break art-->
+            <img src="../app/fire-chicken-balloon.png" />
+		</section>
+
+		<!-- OUR TEAM -->
+		<!--
+        <section id="our-team">
+            <div class = "container">
+            <h1 class="text-center section-heading">Our Team</h1>
+            </div>
+            <div class="container">
+            <div class="box">
+                <img src="../app/test.jpg" class="fade-image">
+                <h3>Name</h3>
+                <h5>Role</h5>
+                <div class = "icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../app/test.jpg" class="fade-image">
+                <h3>Name</h3>
+                <h5>Role</h5>
+                <div class = "icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../app/test.jpg" class="fade-image">
+                <h3>Name</h3>
+                <h5>Role</h5>
+                <div class = "icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../app/test.jpg" class="fade-image">
+                <h3>Name</h3>
+                <h5>Role</h5>
+                <div class = "icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../app/test.jpg" class="fade-image">
+                <h3>Name</h3>
+                <h5>Role</h5>
+                <div class = "icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../app/test.jpg" class="fade-image">
+                <h3>Name</h3>
+                <h5>Role</h5>
+                <div class = "icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            </div>
+            <div class="container">
+            <div class="box">
+                <img src="../app/test.jpg" class="fade-image">
+                <h3>Name</h3>
+                <h5>Role</h5>
+                <div class = "icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../app/test.jpg" class="fade-image">
+                <h3>Name</h3>
+                <h5>Role</h5>
+                <div class = "icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../app/test.jpg" class="fade-image">
+                <h3>Name</h3>
+                <h5>Role</h5>
+                <div class = "icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../app/test.jpg" class="fade-image">
+                <h3>Name</h3>
+                <h5>Role</h5>
+                <div class = "icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../app/test.jpg" class="fade-image">
+                <h3>Name</h3>
+                <h5>Role</h5>
+                <div class = "icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../app/test.jpg" class="fade-image">
+                <h3>Name</h3>
+                <h5>Role</h5>
+                <div class = "icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            </div>
+            <div class="container">
+            <div class="box">
+                <img src="../app/test.jpg" class="fade-image">
+                <h3>Name</h3>
+                <h5>Role</h5>
+                <div class = "icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../app/test.jpg" class="fade-image">
+                <h3>Name</h3>
+                <h5>Role</h5>
+                <div class = "icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../app/test.jpg" class="fade-image">
+                <h3>Name</h5>
+                <h5>Role</h5>
+                <div class = "icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../app/test.jpg" class="fade-image">
+                <h3>Name</h3>
+                <h5>Role</h5>
+                <div class = "icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../app/test.jpg" class="fade-image">
+                <h3>Name</h3>
+                <h5>Role</h5>
+                <div class = "icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../app/test.jpg" class="fade-image">
+                <h3>Name</h3>
+                <h5>Role</h5>
+                <div class = "icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            </div>
+        </section>
+        -->
+
+		<!-- Sponsors -->
+		<section id="sponsors">
+			<div class="container">
+				<h1 class="text-center section-heading">Sponsors</h1>
+			</div>
+			<div class="container">
+				<div class="sponsors-block">
+					<img src="../app/sponsors/ECF-Logo_Logo-Blue.png" alt="Image 1" class="fade-image" />
+				</div>
+				<div class="sponsors-block">
+					<img src="../app/sponsors/VH1fw8H6cMqDQnFAAAAAElFTkSuQmCC.png" alt="Image 2" class="fade-image" />
+				</div>
+			</div>
+		</section>
+
+		<!-- FAQ -->
+		<div class="container">
+			<h1 class="text-center section-heading">FAQ</h1>
+		</div>
+		<section id="faq" class="faq">
+			<div class="accordion-container">
+				<details open>
+					<summary>
+						<span class="accordion-title"> What is LOdown LIVE? </span>
+						<span class="accordion-icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+								<path d="M6 9l6 6l6 -6" />
+							</svg>
+						</span>
+					</summary>
+					<div class="accordion-content">
+						LOdown LIVE is our school’s annual conference event, where we seek to elevate youth voices by providing a platform for students to speak and learn from esteemed community members. We invite speakers from across Alberta to
+						share their experience.
+					</div>
+				</details>
+				<details>
+					<summary>
+						<span class="accordion-title">Will there be food provided at the event?</span>
+						<span class="accordion-icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+								<path d="M6 9l6 6l6 -6" />
+							</svg>
+						</span>
+					</summary>
+					<div class="accordion-content">
+						LOdown LIVE provides a variety of snacks, lunch, and dinner from various places. LOdown LIVE is committed to providing a space for individuals to network and gain more knowledge and experience from others over the medium of
+						food. Our dinner will take place at 5:30 P.M and will be provided for everyone.
+					</div>
+				</details>
+				<details>
+					<summary>
+						<span class="accordion-title">What is the format of LOdown LIVE?</span>
+						<span class="accordion-icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+								<path d="M6 9l6 6l6 -6" />
+							</svg>
+						</span>
+					</summary>
+					<div class="accordion-content">LOdown LIVE starts at 10:40 AM. We will have our constituent schools in the building. Those who</div>
+				</details>
+				<details>
+					<summary>
+						<span class="accordion-title">Where is LOdown LIVE taking place?</span>
+						<span class="accordion-icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+								<path d="M6 9l6 6l6 -6" />
+							</svg>
+						</span>
+					</summary>
+					<div class="accordion-content">LOdown LIVE is hosted by the Student Solidarity Committee at Lillian Osborne High School. Events will take place in the Maclab Theatre and in the library.</div>
+				</details>
+				<details>
+					<summary>
+						<span class="accordion-title">How can I become a volunteer?</span>
+						<span class="accordion-icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+								<path d="M6 9l6 6l6 -6" />
+							</svg>
+						</span>
+					</summary>
+					<div class="accordion-content">For everyone interested in volunteering, we are currently accepting applications</div>
+				</details>
+				<details>
+					<summary>
+						<span class="accordion-title">How can I become a speaker?</span>
+						<span class="accordion-icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+								<path d="M6 9l6 6l6 -6" />
+							</svg>
+						</span>
+					</summary>
+					<div class="accordion-content">
+						We are currently looking for a ____ speaker in our community who is interested in speaking about the drive to self-improvement relative to ____. To become a speaker at LOdown LIVE, we have an application form and encourage
+						everyone to sign up. Additionally, we ask everyone to attach a copy of their biography.
+					</div>
+				</details>
+				<details>
+					<summary>
+						<span class="accordion-title">How was the theme chosen for this year?</span>
+						<span class="accordion-icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+								<path d="M6 9l6 6l6 -6" />
+							</svg>
+						</span>
+					</summary>
+					<div class="accordion-content">
+						Lillian Osborne is home to many aspiring students brimming with initiative and drive. From student associations cultivating a community, to STEM researchers making an impact in the scientific field for the betterment of
+						society, everyone here is consistently improving themselves to fit the vision that they want to create, and that's something unique to Osborne -- something you can't find anywhere else. We chose the theme to foster the drive
+						and leadership home at Lillian Osborne to the next level.
+					</div>
+				</details>
+				<details>
+					<summary>
+						<span class="accordion-title">How does LOdown LIVE aim to elevate youth voices through its platform?</span>
+						<span class="accordion-icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
+							>
+								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+								<path d="M6 9l6 6l6 -6" />
+							</svg>
+						</span>
+					</summary>
+					<div class="accordion-content">
+						LOdown LIVE aims to have people from numerous backgrounds with different experiences share their ideas regarding self-improvement. Many of our speakers are students from our schools or youth in our community who strive to
+						share their everyday experiences. We aim to foster their voice through LOdown LIVE.
+					</div>
+				</details>
+			</div>
+		</section>
+	</body>
+
+	<!-- Footer section -->
+	<footer class="bg-[#0C233F] text-white py-8">
+		<div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center px-6 gap-8">
+			<!-- Location section -->
+			<div class="text-sm">
+				<h3 class="text-lg font-semibold mb-2">Location</h3>
+				<div class="group relative">
+					<a href="https://maps.app.goo.gl/c2qkLpWa9PBvb5L7A" target="_blank" class="block"> 2019 Leger Rd NW </a>
+					<a href="https://maps.app.goo.gl/c2qkLpWa9PBvb5L7A" target="_blank" class="block"> Edmonton, AB T6R 0R9 </a>
+					<!-- Google maps tooltip -->
+					<span class="absolute top-1/2 -translate-y-1/2 translate-x-40 px-3 py-2 text-xs bg-white text-black rounded opacity-0 group-hover:opacity-100 transition-opacity"> Open in Google Maps </span>
+				</div>
+			</div>
+			<!-- Get in touch section -->
+			<div class="text-sm text-center pl-24" id="contact">
+				<h3 class="text-lg font-semibold mb-2">Get in Touch</h3>
+				<a href="https://lillianosborne.epsb.ca/" target="_blank" class="hover:text-[#AA1F2E] underline">lillianosborne.epsb.ca</a>
+				<p>
+					<a href="mailto:lohs.ssc@gmail.com" class="hover:text-[#AA1F2E] underline">lohs.ssc@gmail.com</a>
+					<span>|</span>
+					<a href="tel:7803912450" class="hover:text-[#AA1F2E] underline">780-391-2450</a>
+				</p>
+			</div>
+			<!-- Instagram and copyright section -->
+			<div class="text-sm text-center md:text-right flex flex-col md:flex-row items-center gap-4">
+				<a href="https://www.instagram.com/lohs_legends" target="_blank" class="inline-flex items-center gap-2 hover:text-[#AA1F2E]"> <i class="fa-brands fa-instagram text-lg pt-0.5 text-white"></i> lohs_legends </a>
+				<p class="hidden md:block">|</p>
+				<p class="text-white-200">© 2025 SSC ❤️</p>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		function countdown() {
+			const target_date = new Date("2025-02-16T07:00:00Z");
+			const days_counter = document.querySelector(".countdown-days");
+			const hours_counter = document.querySelector(".countdown-hours");
+			const minutes_counter = document.querySelector(".countdown-minutes");
+			const seconds_counter = document.querySelector(".countdown-seconds");
+
+			function update_timer() {
+				const now = new Date();
+				const difference = target_date - now;
+
+				if (difference <= 0) {
+					days_counter.textContent = "0";
+					hours_counter.textContent = "0";
+					minutes_counter.textContent = "0";
+					seconds_counter.textContent = "0";
+					clearInterval(interval);
+					return;
+				}
+
+				const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+				const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+				const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+				days_counter.textContent = days;
+				hours_counter.textContent = hours;
+				minutes_counter.textContent = minutes;
+				seconds_counter.textContent = seconds;
+			}
+
+			const interval = setInterval(update_timer, 1000);
+			update_timer();
+		}
+
+		document.addEventListener("DOMContentLoaded", countdown);
+	</script>
+
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="script.js"></script>
 </html>
