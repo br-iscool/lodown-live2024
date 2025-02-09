@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Sigmar+One&family=Titan+One&display=swap&https://fonts.googleapis.com/css2?family=Titan+One&https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+*, *::before, *::after {
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --red: #aa1f2e;
+    --blue: #0c233f;
+    --white: #ffffff;
+    --bg: #121212;
+}
+
+html {
+    font-size: 1rem;
+}
+
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--bg);
+}
+
+header {
+    filter: drop-shadow(10px);
+    box-shadow: 0px -20px 20px 20px black;
+}
+
+li a {
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+
+li a:hover {
+    border-bottom: 3px solid #aa1f2e;
+}
+
+/* Hero background */
+
+#hero .relative::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../app/theatre.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+#speakers {
+    padding: 4rem 0;
+    display: flex; /* Enables flexbox */
+    justify-content: flex-start; /* Aligns children side by side */
+    align-items: center; /* Centers items vertically */
+}
+
+#speakers .container {
+    width: 55rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* Modern UI Box */
+.modern-box {
+    margin: 0 auto;
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15));
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Title */
+.title {
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Description */
+.description {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+/* Hover Effect */
+.modern-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.15);
+}
+
+#speakers .speakers-slider {
+    height: 32rem;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.speakers-slide {
+    width: 18rem;
+    height: 32rem;
+    position: relative;
+}
+
+.speakers-slide .speakers-slide-img img {
+    width: 27rem;
+    height: 22rem;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+.speakers-content .speakers-slide-content-bottom {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+    display: none;
+}
+
+.speakers-slider-control {
+    position: relative;
+    bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.speakers-slider-control .swiper-button-next {
+    left: 70% !important;
+    transform: translateX(-70%) !important;
+}
+
+.speakers-slider-control .swiper-button-prev {
+    left: 30% !important;
+    transform: translateX(-30%) !important;
+}
+
+.speakers-slider-control .slider-arrow {
+    background: var(--white);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    left: 30%;
+    transform: translateX(-30%);
+    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.speakers-slider-control .slider-arrow i {
+    font-size: 2rem;
+    color: #070707;
+}
+
+.speakers-slider-control .slider-arrow::after {
+    content: "";
+}
+
+.speakers-slider-control .swiper-pagination {
+    position: relative;
+    width: 15rem;
+    bottom: 1rem;
+}
+
+.speakers-slider-control .swiper-pagination .swiper-pagination-bullet {
+    background: var(--red);
+    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.speakers-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--red);
+}
