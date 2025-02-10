@@ -9,7 +9,7 @@
 		<!-- CSS -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 		<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="new.css" />
 
 		<!-- Tailwind CSS -->
 		<script src="https://cdn.tailwindcss.com"></script>
@@ -19,20 +19,34 @@
 	<header class="lg:px-16 px-10 flex flex-wrap items-center py-3" style="background-color: #0c233f">
 		<div class="flex-1 flex justify-between items-center">
 			<a href="#" class="text-2xl text-white">
-                <img src="../app/logo.png" alt="logo" style="width: 100%; height: 40px" />
-            </a>    
+				<img src="../app/logo.png" alt="logo" style="width: 100%; height: 50px" />
+			</a>
+			<!-- Hamburger menu -->
+			<button id="menu-toggle" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden">
+				<span class="sr-only">Open main menu</span>
+				<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+				</svg>
+			</button>
 		</div>
-		<div id="menu" class="hidden md:flex md:items-center md:w-auto w-full">
-			<nav>
-				<ul class="md:flex items-center justify-between text-lg text-white-700 pt-4 md:pt-0">
-					<li><a class="md:p-4 py-3 px-0 block text-white hover:text-[#AA1F2E]" href="#">Home</a></li>
-					<li><a class="md:p-4 py-3 px-0 block text-white hover:text-[#AA1F2E]" href="#speakers">Speakers</a></li>
-					<li><a class="md:p-4 py-3 px-0 block text-white hover:text-[#AA1F2E]" href="#faq">FAQ</a></li>
-					<li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2 text-white hover:text-[#AA1F2E]" href="#contact">Contact Us</a></li>
-				</ul>
-			</nav>
+		<div class="w-full md:block md:w-auto hidden" id="mobile-menu">
+			<ul class="md:flex items-center justify-between text-lg text-white-700 pt-4 md:pt-0">
+				<li><a href="#" class="md:p-4 py-3 px-0 block text-white hover:text-[#AA1F2E]">Home</a></li>
+				<li><a href="#speaker" class="md:p-4 py-3 px-0 block text-white hover:text-[#AA1F2E]">Speakers</a></li>
+				<li><a href="#faq" class="md:p-4 py-3 px-0 block text-white hover:text-[#AA1F2E]">FAQ</a></li>
+				<li><a href="#contact" class="md:p-4 py-3 px-0 block text-white hover:text-[#AA1F2E]">Contact Us</a></li>
+			</ul>
 		</div>
 	</header>
+
+	<script>
+		const menuToggle = document.getElementById("menu-toggle");
+		const mobileMenu = document.getElementById("mobile-menu");
+
+		menuToggle.addEventListener("click", function () {
+			mobileMenu.classList.toggle("hidden");
+		});
+	</script>
 
 	<body>
 		<!-- Countdown section -->
@@ -71,7 +85,7 @@
 			<div class="hero relative px-6 pt-14 lg:px-8">
 				<div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
 					<div class="text-center">
-						<h1 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">LOdown LIVE</h1>
+						<h1 class="hero-text text-5xl font-light text-white sm:text-7xl">LOdown LIVE</h1>
 						<p class="mt-8 text-lg font-medium sm:text-xl/8 text-white">Feb 21 2025 | Lillian Osborne High School</p>
 						<div class="mt-10 flex items-center justify-center gap-x-6">
 							<a href="#" class="rounded-md bg-[#AA1F2E] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#c42131]">RSVP</a>
@@ -82,31 +96,26 @@
 			</div>
 		</section>
 
-		<div class="separator"></div>
-
 		<!-- Intro art-->
-		<section id="cool-art">
-			<h1 class="text-center section-heading">7 Hours of Powerful Talks...</h1>
+		<section class="cool-art">
+			<h1 class="section-heading">7 Hours of Powerful Talks...</h1>
 			<image src="../app/fire-chicken-over-line.png"></image>
 		</section>
 
 		<!-- About-->
-		<div class="container">
-			<a href="" id="about"></a>
-			<h1 class="text-center section-heading">About LOdown</h1>
-		</div>
-		<section id="about">
+		<h1 class="section-heading" id="about" style="padding-top: 9rem">About Us</h1>
+
+		<section class="about">
 			<img src="../app/fire-chicken-balloon.png" />
 			<p>
 				We're happy to be hosting our 2nd annual LOdown LIVE! This conference was created by the Student Solidarity Committee. This Committee works towards social action awareness and education, inclusion and anti-racism and equity at Lillian
 				Osborne High School. With the support of the Parent Council and staff we were able create a space for speakers to share innovative ideas to help to inspire and engage the community in conversations. We hope to bring together bright
 				minds to give focused talks on a wide range of subjects, to foster learning and provoke conversation that matter. Our main theme this year is Amelioration: Perspectives on Self Improvement.
-            </p>
+			</p>
 		</section>
 
 		<!-- stats -->
-		<section id="stats">
-			<div class="container"></div>
+		<section class="stats">
 			<div class="wrapper">
 				<div class="stats-container">
 					<i class="fas fa-smile"></i>
@@ -126,162 +135,44 @@
 			</div>
 		</section>
 
-		<!-- Gallery -->
-		<!--
-        <div class = "container">
-            <h1 class="text-center section-heading">Photo Gallery</h1>
-        </div>
-        <section id = "gallery">
-            <div class="hexagon">
-            <div class="hex-border">
-                <div class="hex-content">
-                <div class="front">
-                    <div class="image" style="background-image: url('../app/test.jpg');"></div>
-                </div>
-                <div class="back">Side 1</div>
-                </div>
-            </div>
-            </div>
-            <div class="hexagon">
-            <div class="hex-border">
-                <div class="hex-content">
-                <div class="front">
-                    <div class="image" style="background-image: url('../app/test.jpg');"></div>
-                </div>
-                <div class="back">Side 2</div>
-                </div>
-            </div>
-            </div>
-            <div class="hexagon">
-            <div class="hex-border">
-                <div class="hex-content">
-                <div class="front">
-                    <div class="image" style="background-image: url('../app/test.jpg');"></div>
-                </div>
-                <div class="back">Side 3</div>
-                </div>
-            </div>
-            </div>
-            <div class="hexagon">
-            <div class="hex-border">
-                <div class="hex-content">
-                <div class="front">
-                    <div class="image" style="background-image: url('../app/test.jpg');"></div>
-                </div>
-                <div class="back">Side 1</div>
-                </div>
-            </div>
-            </div>
-            <div class="hexagon">
-            <div class="hex-border">
-                <div class="hex-content">
-                <div class="front">
-                    <div class="image" style="background-image: url('../app/test.jpg');"></div>
-                </div>
-                <div class="back">Side 2</div>
-                </div>
-            </div>
-            </div>
-            <div class="hexagon">
-            <div class="hex-border">
-                <div class="hex-content">
-                <div class="front">
-                    <div class="image" style="background-image: url('../app/test.jpg');"></div>
-                </div>
-                <div class="back">Side 3</div>
-                </div>
-            </div>
-            </div>
-            <div class="hexagon">
-            <div class="hex-border">
-                <div class="hex-content">
-                <div class="front">
-                    <div class="image" style="background-image: url('../app/test.jpg');"></div>
-                </div>
-                <div class="back">Side 4</div>
-                </div>
-            </div>
-            </div>
-            <div class="hexagon">
-            <div class="hex-border">
-                <div class="hex-content">
-                <div class="front">
-                    <div class="image" style="background-image: url('../app/test.jpg');"></div>
-                </div>
-                <div class="back">Side 1</div>
-                </div>
-            </div>
-            </div>
-            <div class="hexagon">
-            <div class="hex-border">
-                <div class="hex-content">
-                <div class="front">
-                    <div class="image" style="background-image: url('../app/test.jpg');"></div>
-                </div>
-                <div class="back">Side 2</div>
-                </div>
-            </div>
-            </div>
-            <div class="hexagon">
-            <div class="hex-border">
-                <div class="hex-content">
-                <div class="front">
-                    <div class="image" style="background-image: url('../app/test.jpg');"></div>
-                </div>
-                <div class="back">Side 3</div>
-                </div>
-            </div>
-            </div>
-        </section>
-        -->
-
-		<!-- Theme text -->
-		<section id="big-text">
-			<h1 class="swift-up-text">The THEME for discussion this year is...</h1>
-			<div class="container">
-				<span class="animate-character">Amelioration</span>
+		<!-- Theme section -->
+		<section class="big-text">
+			<h1 class="section-heading">This year's THEME is...</h1>
+			<div class="animate">
+				<span class="animate-character">AMELIORATION</span>
 				<h1 class="animate-character">Perspectives on Self Improvement</h1>
 			</div>
 		</section>
 
 		<!-- Keynote speakers -->
-		<div class="container">
-			<h1 class="text-center section-heading">Keynote Speakers</h1>
-		</div>
+		<h1 class="section-heading" id="speaker">Keynote Speakers</h1>
 
 		<section id="speakers">
 			<div class="container">
 				<div class="swiper speakers-slider">
 					<div class="swiper-wrapper">
-						<!-- Slide-start -->
 						<div
 							class="swiper-slide speakers-slide"
 							data-title="Mehak Sharma"
-							data-description="Mehak Sharma is a first-year Bachelor of Commerce student at the University of Alberta and the CEO of Aura, a youth-led business promoting well-being, sustainability, and inclusivity. Through Aura, she has developed and sold mental wellness products, generating revenue while making a social impact. An aspiring law student, she is passionate about advocacy and leadership, having held various roles in community organizations. Outside of business and law, she explores diverse interests, including modeling and competitive fighting, which reflect her creativity and discipline. With an entrepreneurial mindset and a commitment to meaningful change, she strives to make a lasting impact."
-						>
+							data-description="Mehak Sharma is a first-year Bachelor of Commerce student at the University of Alberta and the CEO of Aura, a youth-led business promoting well-being, sustainability, and inclusivity. Through Aura, she has developed and sold mental wellness products, generating revenue while making a social impact. An aspiring law student, she is passionate about advocacy and leadership, having held various roles in community organizations. Outside of business and law, she explores diverse interests, including modeling and competitive fighting, which reflect her creativity and discipline. With an entrepreneurial mindset and a commitment to meaningful change, she strives to make a lasting impact.">
 							<div class="speakers-slide-img">
 								<img src="../app/speakers/may sharma - Mehak Sharma.jpg" alt="speakers" />
 							</div>
 						</div>
-						<!-- Slide-end -->
 
-						<!-- Slide-start -->
 						<div
 							class="swiper-slide speakers-slide"
 							data-title="Gajani Kajanthan"
 							data-description="
-                            Gajani Kajanthan is an inquisitive and driven grade 11 student at Lillian Osborne High School with a deep passion for science and literature. Her love for learning goes beyond the classroom, as she eagerly takes on challenges that expand her intellectual horizons. She has a keen interest in psychology and neurology, fascinated by the complexities of the human mind. Dedicated to making a difference, Gajani actively participates in volunteer work, contributing to school events and community initiatives. She is always looking for ways to grow and engage with her interests, striving to make a positive impact through her dedication and curiosity."
-						>
+                            Gajani Kajanthan is an inquisitive and driven grade 11 student at Lillian Osborne High School with a deep passion for science and literature. Her love for learning goes beyond the classroom, as she eagerly takes on challenges that expand her intellectual horizons. She has a keen interest in psychology and neurology, fascinated by the complexities of the human mind. Dedicated to making a difference, Gajani actively participates in volunteer work, contributing to school events and community initiatives. She is always looking for ways to grow and engage with her interests, striving to make a positive impact through her dedication and curiosity.">
 							<div class="speakers-slide-img">
 								<img src="../app/speakers/Gajani_Kajanthan - Gajani Kajanthan.jpg" alt="Tranding" />
 							</div>
 						</div>
-						<!-- Slide-end -->
 
-						<!-- Slide-start -->
 						<div
 							class="swiper-slide speakers-slide"
-                            id="speaker-3"
+							id="speaker-3"
 							data-title="Lillah Penddah"
 							data-description="
                             I am the CEO + FOUNDER of AFRO-FACTS.
@@ -328,98 +219,101 @@
                             they feel and de-escalate
                             heightened emotions with
                             respect to uncomfortable
-                            Conversations.
-                        "
-						>
+                            Conversations.">
 							<div class="speakers-slide-img">
 								<img src="../app/speakers/E5R5A45601 - Lillah Penddah.jpg" alt="Tranding" />
 							</div>
 						</div>
-						<!-- Slide-end -->
 
-						<!-- Slide-start -->
-						<div class="swiper-slide speakers-slide" data-title="Methuli Liyanage" data-description="Methuli Liyanage is a dedicated high school student with a passion for leadership and community engagement. Having recently moved from Sri Lanka to Canada, she joined Lillian Osborne High School in October 2024 and quickly became involved in various activities. She is a member of the LOHS Post club, where she writes articles on topics relevant to high school students, and Students for the Community, contributing to meaningful initiatives. In Sri Lanka, she served as a senior prefect at her previous school and actively participated in drama and debating, developing strong leadership and communication skills. She was also a senior guide, engaging in volunteer service and community support efforts, further strengthening her commitment to making a positive impact. Selected as a speaker for LOdown LIVE, Methuli aims to highlight the power of small actions in creating lasting change within communities.
-">
+						<div
+							class="swiper-slide speakers-slide"
+							data-title="Methuli Liyanage"
+							data-description="Methuli Liyanage is a dedicated high school student with a passion for leadership and community engagement. Having recently moved from Sri Lanka to Canada, she joined Lillian Osborne High School in October 2024 and quickly became involved in various activities. She is a member of the LOHS Post club, where she writes articles on topics relevant to high school students, and Students for the Community, contributing to meaningful initiatives. In Sri Lanka, she served as a senior prefect at her previous school and actively participated in drama and debating, developing strong leadership and communication skills. She was also a senior guide, engaging in volunteer service and community support efforts, further strengthening her commitment to making a positive impact. Selected as a speaker for LOdown LIVE, Methuli aims to highlight the power of small actions in creating lasting change within communities.">
 							<div class="speakers-slide-img">
 								<img src="../app/speakers/Photo - Methuli Liyanage.jpeg" alt="Tranding" />
 							</div>
 						</div>
-						<!-- Slide-end -->
 
-						<!-- Slide-start -->
-						<div class="swiper-slide speakers-slide" data-title="Green Humane Group" data-description="Gabriel Worsley-Dragland is a 3rd year University of Alberta student studying Biology and Physical Sciences who is passionate about environmental sustainability. He was a member of his university's student union sustainability group in recent years and a co-founder of the Green Humane Group alongside his brother, Tynan. Gabriel has engaged in two years of theoretical chemistry research at the UoA with a focus on micellar drug diffusion dynamics and carbon capture by metal-organic frameworks.
-">
+						<div
+							class="swiper-slide speakers-slide"
+							data-title="Green Humane Group"
+							data-description="Gabriel Worsley-Dragland is a 3rd year University of Alberta student studying Biology and Physical Sciences who is passionate about environmental sustainability. He was a member of his university's student union sustainability group in recent years and a co-founder of the Green Humane Group alongside his brother, Tynan. Gabriel has engaged in two years of theoretical chemistry research at the UoA with a focus on micellar drug diffusion dynamics and carbon capture by metal-organic frameworks.">
 							<div class="speakers-slide-img">
 								<img src="../app/speakers/IMG_5378 - Gabe Worsley-Dragland.jpg" alt="Tranding" />
 							</div>
 						</div>
-						<!-- Slide-end -->
 
-						<!-- Slide-start -->
-						<div class="swiper-slide speakers-slide" data-title="Dylan Nkala" data-description="
-I am a Director at The Young Afro Canadian Organization. Which works with youths between 15-30 in not only getting into post secondary but transitioning a degree into a job opportunity and ultimately helping grow representation in our community and minimizing the youth that fall through the cracks.
-">
+						<div
+							class="swiper-slide speakers-slide"
+							data-title="Dylan Nkala"
+							data-description="I am a Director at The Young Afro Canadian Organization. Which works with youths between 15-30 in not only getting into post secondary but transitioning a degree into a job opportunity and ultimately helping grow representation in our community and minimizing the youth that fall through the cracks.">
 							<div class="speakers-slide-img">
 								<img src="../app/speakers/17383561432744574391708990146665 - Dylan Nkala.jpg" alt="Tranding" />
 							</div>
 						</div>
-						<!-- Slide-end -->
 
-						<!-- Slide-start -->
-						<div class="swiper-slide speakers-slide" data-title="Essica Cheung" data-description="Essica Cheung is a first year Media Studies student at the University of Alberta, but she will be switching over to pursue a Bachelor of Education in the fall specializing in elementary education. She is a Director of External Events at TEDxUAlberta as well as an avid member of the UofA’s Club Periodically, and has been a volunteer at The Today Centre for almost four years. Her passion for leadership and volunteering helped her become a 2024 Michael A. Strembitsky Award Nominee. Essica’s past speaking experience includes being a speaker at an EDI summit in 2024 and emceeing for events both in and out of school such as at the Chinese Pavilion during the Edmonton Heritage Festival. ">
+						<div
+							class="swiper-slide speakers-slide"
+							data-title="Essica Cheung"
+							data-description="Essica Cheung is a first year Media Studies student at the University of Alberta, but she will be switching over to pursue a Bachelor of Education in the fall specializing in elementary education. She is a Director of External Events at TEDxUAlberta as well as an avid member of the UofA’s Club Periodically, and has been a volunteer at The Today Centre for almost four years. Her passion for leadership and volunteering helped her become a 2024 Michael A. Strembitsky Award Nominee. Essica’s past speaking experience includes being a speaker at an EDI summit in 2024 and emceeing for events both in and out of school such as at the Chinese Pavilion during the Edmonton Heritage Festival.">
 							<div class="speakers-slide-img">
 								<img src="../app/speakers/SSCPORTRAIT - Essica Cheung.JPG" alt="Tranding" />
 							</div>
 						</div>
-						<!-- Slide-end -->
-                        <!-- Slide-start -->
-						<div class="swiper-slide speakers-slide" data-title="Jorge Sanchez Perez" data-description="Jorge Sanchez Perez is an Assistant Professor of Philosophy at the University of Alberta. He works on Social Epistemology, Legal and Political Philosophy, Indigenous Philosophy, and Latin American Philosophy. His work focuses on bridging tensions between Western and Indigenous philosophical views from across the world. He has published different papers on philosophical methodology, Indigenous philosophies and political philosophy. He is currently working on reconstructing Andean philosophical views via analyzing the Huarochirí Manuscript as a primary source.">
+
+						<div
+							class="swiper-slide speakers-slide"
+							data-title="Jorge Sanchez Perez"
+							data-description="Jorge Sanchez Perez is an Assistant Professor of Philosophy at the University of Alberta. He works on Social Epistemology, Legal and Political Philosophy, Indigenous Philosophy, and Latin American Philosophy. His work focuses on bridging tensions between Western and Indigenous philosophical views from across the world. He has published different papers on philosophical methodology, Indigenous philosophies and political philosophy. He is currently working on reconstructing Andean philosophical views via analyzing the Huarochirí Manuscript as a primary source.">
 							<div class="speakers-slide-img">
 								<img src="../app/speakers/JHSP - Jorge Sanchez Perez.jpg" alt="Tranding" />
 							</div>
 						</div>
-						<!-- Slide-end -->
-                         <!-- Slide-start -->
-						<div class="swiper-slide speakers-slide" data-title="Jack Zupko" data-description="Jack Zupko is Professor of Philosophy at the University of Alberta.  He is a graduate of the University of Waterloo (BA) and Cornell University (MA, PhD), specializing in medieval philosophy.  He has published many research articles and five books.  He has served as subject editor for the Stanford Encyclopedia of Philosophy since 1998 as well as Editor (2015-20) of the Journal of the History of Philosophy.  Professor Zupko received awards for his teaching while on the faculties of Emory University and San Diego State University. Prior to joining the University of Alberta in 2013, he was Chair of the Philosophy Department at the University of Winnipeg.">
+
+						<div
+							class="swiper-slide speakers-slide"
+							data-title="Jack Zupko"
+							data-description="Jack Zupko is Professor of Philosophy at the University of Alberta.  He is a graduate of the University of Waterloo (BA) and Cornell University (MA, PhD), specializing in medieval philosophy.  He has published many research articles and five books.  He has served as subject editor for the Stanford Encyclopedia of Philosophy since 1998 as well as Editor (2015-20) of the Journal of the History of Philosophy.  Professor Zupko received awards for his teaching while on the faculties of Emory University and San Diego State University. Prior to joining the University of Alberta in 2013, he was Chair of the Philosophy Department at the University of Winnipeg.">
 							<div class="speakers-slide-img">
 								<img src="../app/speakers/JAZ headshot - Jack Zupko.jpeg" alt="Tranding" />
 							</div>
 						</div>
-						<!-- Slide-end -->
-                         <!-- Slide-start -->
-						<div class="swiper-slide speakers-slide" data-title="Jordon Hon" data-description="Jordon Hon 韓寶軒 (he/him) is a visual artist and community organizer born and raised in amiskwaciwâskahikan / Edmonton with Hong Kong Cantonese roots.
 
-He photographs daily life while also curating local experiences to bring people together. Photography is a practice that grounds him, connects him to his community, and gives him a way to explore who he is. Jordon believes in collective solidarity leading to liberation for all. He often looks for evidence of this or the absence of this notion in our world to guide where he and his camera go. Making art to serve as “an axe for the frozen sea within us”.
-
-Jordon has been involved in Edmonton's Chinatown community since 2021 and doesn't see himself slowing down. His various creative projects include: A Portrait of Chinatown docu-series, Untouchable Chinatown book and exhibition, Dragon Fried Rice art exhibition, Harm Reduction x Chinatown film screening, Storytelling in Chinatown from Within, (Not Your Average) Lunar New Year Banquet, Azure Dragon of the East short film, and What We Carry 唐人街 art exhibition.
-">
+						<div
+							class="swiper-slide speakers-slide"
+							data-title="Jordon Hon"
+							data-description="Jordon Hon 韓寶軒 (he/him) is a visual artist and community organizer born and raised in amiskwaciwâskahikan / Edmonton with Hong Kong Cantonese roots. He photographs daily life while also curating local experiences to bring people together. Photography is a practice that grounds him, connects him to his community, and gives him a way to explore who he is. Jordon believes in collective solidarity leading to liberation for all. He often looks for evidence of this or the absence of this notion in our world to guide where he and his camera go. Making art to serve as “an axe for the frozen sea within us”. Jordon has been involved in Edmonton's Chinatown community since 2021 and doesn't see himself slowing down. His various creative projects include: A Portrait of Chinatown docu-series, Untouchable Chinatown book and exhibition, Dragon Fried Rice art exhibition, Harm Reduction x Chinatown film screening, Storytelling in Chinatown from Within, (Not Your Average) Lunar New Year Banquet, Azure Dragon of the East short film, and What We Carry 唐人街 art exhibition.">
 							<div class="speakers-slide-img">
 								<img src="../app/speakers/Jordon Hon Artist Portrait - Jordon Hon.jpg" alt="Tranding" />
 							</div>
 						</div>
-						<!-- Slide-end -->
-                         <!-- Slide-start -->
-						<div class="swiper-slide speakers-slide" data-title="Emily Chu" data-description="Emily Chu is an award-winning Chinese illustrator and visual artist based on Treaty 6/Edmonton. Emily's practice includes commercial illustration, murals, storytelling, sketching, and community-arts initiatives. Emily is the founder and lead organizer of Chinatown's newest Lunar New Year Market: Togather Chinatown Arts Festival, and storytelling map project: Chinatown Stories Map. She is currently working on a graphic novel about growing up as a new immigrant in the Alberta prairies in the early 90's - A portion of that project will be featured as a mural at the main hall of the AGA in late March, 2025. 
-">
+
+						<div
+							class="swiper-slide speakers-slide"
+							data-title="Emily Chu"
+							data-description="Emily Chu is an award-winning Chinese illustrator and visual artist based on Treaty 6/Edmonton. Emily's practice includes commercial illustration, murals, storytelling, sketching, and community-arts initiatives. Emily is the founder and lead organizer of Chinatown's newest Lunar New Year Market: Togather Chinatown Arts Festival, and storytelling map project: Chinatown Stories Map. She is currently working on a graphic novel about growing up as a new immigrant in the Alberta prairies in the early 90's - A portion of that project will be featured as a mural at the main hall of the AGA in late March, 2025.">
 							<div class="speakers-slide-img">
 								<img src="../app/speakers/373A7204-15 2 - Emily Chu.jpg" alt="Tranding" />
 							</div>
 						</div>
-						<!-- Slide-end -->
-                         <!-- Slide-start -->
-						<div class="swiper-slide speakers-slide speaker-12" data-title="Kathryn Gwun-Yeen Lennon" data-description="Kathryn has worked at the intersections of community planning, community engagement, research and communications for over a decade. She loves working collaboratively to bring projects to life, especially when they relate to placemaking, food, community-building, and storytelling. A common thread in much of her work is food systems planning, intercultural planning, community and urban planning, and civic participation. With an eye to equity, diversity and inclusion, she has been privileged to work with and for a wide range of organizations and audiences, including the public sector, private sector, and nonprofit sector, working with arts, advocacy, multicultural, and grassroots organizations. She is also a poet, writer, and the co-editor and co-founder of Hungry Zine, an award-winning, community-focused food publication. She holds a MA in Planning from UBC's School of Community and Regional Planning, and a Bachelor of Environment from the University of Waterloo. She was born and raised in Edmonton/Amiskwacîwâskahikan, Treaty 6 Territory and Métis Region Zone 4, with mixed Hong-Kong Cantonese and Irish settler ancestry. ">
+
+						<div
+							class="swiper-slide speakers-slide speaker-12"
+							data-title="Kathryn Gwun-Yeen Lennon"
+							data-description="Kathryn has worked at the intersections of community planning, community engagement, research and communications for over a decade. She loves working collaboratively to bring projects to life, especially when they relate to placemaking, food, community-building, and storytelling. A common thread in much of her work is food systems planning, intercultural planning, community and urban planning, and civic participation. With an eye to equity, diversity and inclusion, she has been privileged to work with and for a wide range of organizations and audiences, including the public sector, private sector, and nonprofit sector, working with arts, advocacy, multicultural, and grassroots organizations. She is also a poet, writer, and the co-editor and co-founder of Hungry Zine, an award-winning, community-focused food publication. She holds a MA in Planning from UBC's School of Community and Regional Planning, and a Bachelor of Environment from the University of Waterloo. She was born and raised in Edmonton/Amiskwacîwâskahikan, Treaty 6 Territory and Métis Region Zone 4, with mixed Hong-Kong Cantonese and Irish settler ancestry.">
 							<div class="speakers-slide-img">
 								<img src="../app/speakers/Kathryn+Kyla_Oct2023Portraits-82 - Kathryn Gwun-Yeen Lennon.jpg" alt="Tranding" />
 							</div>
 						</div>
-						<!-- Slide-end -->
-                         <!-- Slide-start -->
-						<div class="swiper-slide speakers-slide" data-title="Yihua Zhang" data-description="Yihua Zhang is an Edmonton based facilitator, community organizer, and artist. Originally from Gansu province, Yihua moved to the city at age 8 and has called Edmonton home ever since. In search of connection to identity and culture, Yihua got involved in Chinatown in 2021 and has been involved in several projects. Most recently, they were one of the organizers for the Chinatown Care Package Series from Aiya Collective. Yihua is passionate about exploring the cross sections of identity, power, and justice and building a path towards collective liberation.">
+
+						<div
+							class="swiper-slide speakers-slide"
+							data-title="Yihua Zhang"
+							data-description="Yihua Zhang is an Edmonton based facilitator, community organizer, and artist. Originally from Gansu province, Yihua moved to the city at age 8 and has called Edmonton home ever since. In search of connection to identity and culture, Yihua got involved in Chinatown in 2021 and has been involved in several projects. Most recently, they were one of the organizers for the Chinatown Care Package Series from Aiya Collective. Yihua is passionate about exploring the cross sections of identity, power, and justice and building a path towards collective liberation.">
 							<div class="speakers-slide-img">
 								<img src="../app/speakers/IMG_20200917_154218 - Yihua Zhang.jpg" alt="Tranding" />
 							</div>
 						</div>
-						<!-- Slide-end -->
 					</div>
 
 					<div class="speakers-slider-control">
@@ -441,294 +335,105 @@ Jordon has been involved in Edmonton's Chinatown community since 2021 and doesn'
 		</section>
 
 		<!-- Schedule -->
-		<div class="container">
-			<h1 class="text-center section-heading">Schedule</h1>
-		</div>
+		<h1 class="section-heading">Schedule</h1>
+
 		<section class="timeline">
 			<div class="timeline-item">
 				<h3>11:00 AM - Keynote Speaker</h3>
-				<p>Jujie Luan, Fencing Olympic Gold Medallist, in the theatre.</p>
+				<p>Theatre: Jujie Luan, Fencing Olympic Gold Medallist</p>
 			</div>
 			<div class="timeline-item">
 				<h3>11:30 AM - Speaker</h3>
-				<p>Panel Discussion: UofA Philosophy Professors, in the theatre.</p>
-                <p>Gajani Kajanthan, in the library.</p>
+				<p>Theatre: Panel Discussion: UofA Philosophy Professors</p>
+				<p>Library: Gajani Kajanthan</p>
 			</div>
 			<div class="timeline-item">
 				<h3>12:00 PM - Speaker</h3>
-				<p>Dylan Mykala: EDI Speaker, in the theatre.</p>
-                <p>Methuli Liyanage, in the library.</p>
+				<p>Theatre: Dylan Mykala, EDI Speaker</p>
+				<p>Library: Methuli Liyanage</p>
 			</div>
 			<div class="timeline-item">
-				<h3 style="margin-bottom: 0px;">12:30 PM - Lunch</h3>
+				<h3 style="margin-bottom: 0px">12:30 PM - Lunch</h3>
 			</div>
 			<div class="timeline-item">
 				<h3>1:30 PM - Keynote Speaker</h3>
-				<p>Peter Silverstone, UofA, in the theatre.</p>
+				<p>Theatre: Peter Silverstone, UofA</p>
 			</div>
 			<div class="timeline-item">
 				<h3>2:10 PM - Speaker</h3>
-				<p>Lillah Penddah: AFRO-FACTS, in the theatre.</p>
-                <p>Green Humane Group: Tynan and Gabe, in the library</p>
+				<p>Theatre: Lillah Penddah: AFRO-FACTS</p>
+				<p>Library: Green Humane Group: Tynan and Gabe</p>
 			</div>
-            <div class="timeline-item">
+			<div class="timeline-item">
 				<h3>3:10 PM - Panel Discussion + Speaker</h3>
-				<p>Art in Chinatown | EDI Journey, in the theatre.</p>
-                <p>May Sharma: LOHS Alumni, in the library.</p>
+				<p>Theatre: Art in Chinatown | EDI Journey</p>
+				<p>Library: May Sharma: LOHS Alumni</p>
 			</div>
-            <div class="timeline-item">
-				<h3 style="margin-bottom: 0px;">4:10 PM - Transition to Open Conference</h3>
+			<div class="timeline-item">
+				<h3 style="margin-bottom: 0px">4:10 PM - Transition to Open Conference</h3>
 			</div>
-            <div class="timeline-item">
+			<div class="timeline-item">
 				<h3>4:20 PM - Keynote Speaker</h3>
-				<p>Andy Greenshaw, UofA, in the theatre.</p>
+				<p>Theatre: Andy Greenshaw, UofA</p>
 			</div>
-            <div class="timeline-item">
+			<div class="timeline-item">
 				<h3>4:50 PM - Speaker</h3>
-				<p>Don Patterson, in the theatre.</p>
+				<p>Theatre: Don Patterson</p>
 			</div>
-            <div class="timeline-item">
-				<h3 style="margin-bottom: 0px;">5:30 PM - Dinner</h3>
+			<div class="timeline-item">
+				<h3 style="margin-bottom: 0px">5:30 PM - Dinner</h3>
 			</div>
 		</section>
 
 		<!-- Break art-->
-		<section id="break-art">
+		<section class="break-art">
 			<img style="width: 100%; height: 100%" src="../app/bird-on-stage.png" />
 		</section>
 
 		<!-- ABOUT THE SSC-->
-		<div class="container">
-			<h1 class="text-center section-heading">About the SSC</h1>
-		</div>
-		<section id="about-the-ssc">
-            <p>
-                The Student Solidarity Committee (SSC) acknowledges the struggles of the students staff in our school, so our mission is to harness the social justice passion in our students and turn it into concrete actions to help both individuals and
-                groups, especially those who belong to minorities, in our local community.
-            </p>
-			<!-- Break art-->
-            <img src="../app/fire-chicken-balloon.png" />
+		<h1 class="section-heading" style="font-size: 2rem">About the SSC</h1>
+
+		<section class="about-the-ssc">
+			<p>
+				The Student Solidarity Committee (SSC) acknowledges the struggles of the students staff in our school, so our mission is to harness the social justice passion in our students and turn it into concrete actions to help both individuals
+				and groups, especially those who belong to minorities, in our local community.
+			</p>
+			<img src="../app/fire-chicken-balloon.png" />
 		</section>
 
-		<!-- OUR TEAM -->
-		<!--
-        <section id="our-team">
-            <div class = "container">
-            <h1 class="text-center section-heading">Our Team</h1>
-            </div>
-            <div class="container">
-            <div class="box">
-                <img src="../app/test.jpg" class="fade-image">
-                <h3>Name</h3>
-                <h5>Role</h5>
-                <div class = "icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="../app/test.jpg" class="fade-image">
-                <h3>Name</h3>
-                <h5>Role</h5>
-                <div class = "icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="../app/test.jpg" class="fade-image">
-                <h3>Name</h3>
-                <h5>Role</h5>
-                <div class = "icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="../app/test.jpg" class="fade-image">
-                <h3>Name</h3>
-                <h5>Role</h5>
-                <div class = "icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="../app/test.jpg" class="fade-image">
-                <h3>Name</h3>
-                <h5>Role</h5>
-                <div class = "icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="../app/test.jpg" class="fade-image">
-                <h3>Name</h3>
-                <h5>Role</h5>
-                <div class = "icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            </div>
-            <div class="container">
-            <div class="box">
-                <img src="../app/test.jpg" class="fade-image">
-                <h3>Name</h3>
-                <h5>Role</h5>
-                <div class = "icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="../app/test.jpg" class="fade-image">
-                <h3>Name</h3>
-                <h5>Role</h5>
-                <div class = "icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="../app/test.jpg" class="fade-image">
-                <h3>Name</h3>
-                <h5>Role</h5>
-                <div class = "icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="../app/test.jpg" class="fade-image">
-                <h3>Name</h3>
-                <h5>Role</h5>
-                <div class = "icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="../app/test.jpg" class="fade-image">
-                <h3>Name</h3>
-                <h5>Role</h5>
-                <div class = "icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="../app/test.jpg" class="fade-image">
-                <h3>Name</h3>
-                <h5>Role</h5>
-                <div class = "icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            </div>
-            <div class="container">
-            <div class="box">
-                <img src="../app/test.jpg" class="fade-image">
-                <h3>Name</h3>
-                <h5>Role</h5>
-                <div class = "icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="../app/test.jpg" class="fade-image">
-                <h3>Name</h3>
-                <h5>Role</h5>
-                <div class = "icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="../app/test.jpg" class="fade-image">
-                <h3>Name</h5>
-                <h5>Role</h5>
-                <div class = "icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="../app/test.jpg" class="fade-image">
-                <h3>Name</h3>
-                <h5>Role</h5>
-                <div class = "icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="../app/test.jpg" class="fade-image">
-                <h3>Name</h3>
-                <h5>Role</h5>
-                <div class = "icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="box">
-                <img src="../app/test.jpg" class="fade-image">
-                <h3>Name</h3>
-                <h5>Role</h5>
-                <div class = "icons">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            </div>
-        </section>
-        -->
-
 		<!-- Sponsors -->
-		<section id="sponsors">
-			<div class="container">
-				<h1 class="text-center section-heading">Sponsors</h1>
+		<h1 class="section-heading">Sponsors</h1>
+
+		<section class="sponsors">
+			<div class="sponsors-block">
+				<img src="../app/sponsors/ECF-Logo_Logo-Blue.png" alt="Image 1" class="fade-image" />
 			</div>
-			<div class="container">
-				<div class="sponsors-block">
-					<img src="../app/sponsors/ECF-Logo_Logo-Blue.png" alt="Image 1" class="fade-image" />
-				</div>
-				<div class="sponsors-block">
-					<img src="../app/sponsors/VH1fw8H6cMqDQnFAAAAAElFTkSuQmCC.png" alt="Image 2" class="fade-image" />
-				</div>
-				<div class="sponsors-block">
-					<img src="../app/sponsors/parent_council.png" alt="Image 2" class="fade-image" />
-				</div>
+			<div class="sponsors-block">
+				<img src="../app/sponsors/VH1fw8H6cMqDQnFAAAAAElFTkSuQmCC.png" alt="Image 2" class="fade-image" />
+			</div>
+			<div class="sponsors-block">
+				<img src="../app/sponsors/parent_council.png" alt="Image 2" class="fade-image" />
 			</div>
 		</section>
 
 		<!-- FAQ -->
-		<div class="container">
-			<h1 class="text-center section-heading">FAQ</h1>
-		</div>
-		<section id="faq" class="faq">
+		<h1 class="section-heading" id="faq">FAQ</h1>
+		<!-- Define SVG -->
+		<svg style="display: none">
+			<symbol id="chevron-down-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+				<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+				<path d="M6 9l6 6l6 -6" />
+			</symbol>
+		</svg>
+
+		<section class="faq">
 			<div class="accordion-container">
-				<details open>
+				<details>
 					<summary>
-						<span class="accordion-title"> What is LOdown LIVE? </span>
+						<span class="accordion-title">What is LOdown LIVE? </span>
 						<span class="accordion-icon">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="1.5"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
-							>
-								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-								<path d="M6 9l6 6l6 -6" />
+							<svg width="24" height="24" class="icon">
+								<use href="#chevron-down-icon"></use>
 							</svg>
 						</span>
 					</summary>
@@ -741,20 +446,8 @@ Jordon has been involved in Edmonton's Chinatown community since 2021 and doesn'
 					<summary>
 						<span class="accordion-title">Will there be food provided at the event?</span>
 						<span class="accordion-icon">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="1.5"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
-							>
-								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-								<path d="M6 9l6 6l6 -6" />
+							<svg width="24" height="24" class="icon">
+								<use href="#chevron-down-icon"></use>
 							</svg>
 						</span>
 					</summary>
@@ -767,20 +460,8 @@ Jordon has been involved in Edmonton's Chinatown community since 2021 and doesn'
 					<summary>
 						<span class="accordion-title">What is the format of LOdown LIVE?</span>
 						<span class="accordion-icon">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="1.5"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
-							>
-								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-								<path d="M6 9l6 6l6 -6" />
+							<svg width="24" height="24" class="icon">
+								<use href="#chevron-down-icon"></use>
 							</svg>
 						</span>
 					</summary>
@@ -790,20 +471,8 @@ Jordon has been involved in Edmonton's Chinatown community since 2021 and doesn'
 					<summary>
 						<span class="accordion-title">Where is LOdown LIVE taking place?</span>
 						<span class="accordion-icon">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="1.5"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
-							>
-								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-								<path d="M6 9l6 6l6 -6" />
+							<svg width="24" height="24" class="icon">
+								<use href="#chevron-down-icon"></use>
 							</svg>
 						</span>
 					</summary>
@@ -813,20 +482,8 @@ Jordon has been involved in Edmonton's Chinatown community since 2021 and doesn'
 					<summary>
 						<span class="accordion-title">How can I become a volunteer?</span>
 						<span class="accordion-icon">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="1.5"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
-							>
-								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-								<path d="M6 9l6 6l6 -6" />
+							<svg width="24" height="24" class="icon">
+								<use href="#chevron-down-icon"></use>
 							</svg>
 						</span>
 					</summary>
@@ -836,20 +493,8 @@ Jordon has been involved in Edmonton's Chinatown community since 2021 and doesn'
 					<summary>
 						<span class="accordion-title">How can I become a speaker?</span>
 						<span class="accordion-icon">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="1.5"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
-							>
-								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-								<path d="M6 9l6 6l6 -6" />
+							<svg width="24" height="24" class="icon">
+								<use href="#chevron-down-icon"></use>
 							</svg>
 						</span>
 					</summary>
@@ -862,20 +507,8 @@ Jordon has been involved in Edmonton's Chinatown community since 2021 and doesn'
 					<summary>
 						<span class="accordion-title">How was the theme chosen for this year?</span>
 						<span class="accordion-icon">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="1.5"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
-							>
-								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-								<path d="M6 9l6 6l6 -6" />
+							<svg width="24" height="24" class="icon">
+								<use href="#chevron-down-icon"></use>
 							</svg>
 						</span>
 					</summary>
@@ -889,20 +522,8 @@ Jordon has been involved in Edmonton's Chinatown community since 2021 and doesn'
 					<summary>
 						<span class="accordion-title">How does LOdown LIVE aim to elevate youth voices through its platform?</span>
 						<span class="accordion-icon">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								fill="none"
-								stroke="currentColor"
-								stroke-width="1.5"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
-							>
-								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-								<path d="M6 9l6 6l6 -6" />
+							<svg width="24" height="24" class="icon">
+								<use href="#chevron-down-icon"></use>
 							</svg>
 						</span>
 					</summary>
@@ -925,11 +546,11 @@ Jordon has been involved in Edmonton's Chinatown community since 2021 and doesn'
 					<a href="https://maps.app.goo.gl/c2qkLpWa9PBvb5L7A" target="_blank" class="block"> 2019 Leger Rd NW </a>
 					<a href="https://maps.app.goo.gl/c2qkLpWa9PBvb5L7A" target="_blank" class="block"> Edmonton, AB T6R 0R9 </a>
 					<!-- Google maps tooltip -->
-					<span class="absolute top-1/2 -translate-y-1/2 translate-x-40 px-3 py-2 text-xs bg-white text-black rounded opacity-0 group-hover:opacity-100 transition-opacity"> Open in Google Maps </span>
+					<span class="absolute top-1/2 -translate-y-1/2 translate-x-44 px-3 py-2 text-xs bg-white text-black rounded opacity-0 group-hover:opacity-100 transition-opacity"> Open in Google Maps </span>
 				</div>
 			</div>
 			<!-- Get in touch section -->
-			<div class="text-sm text-center pl-24" id="contact">
+			<div class="contact">
 				<h3 class="text-lg font-semibold mb-2">Get in Touch</h3>
 				<a href="https://lillianosborne.epsb.ca/" target="_blank" class="hover:text-[#AA1F2E] underline">lillianosborne.epsb.ca</a>
 				<p>
@@ -942,7 +563,7 @@ Jordon has been involved in Edmonton's Chinatown community since 2021 and doesn'
 			<div class="text-sm text-center md:text-right flex flex-col md:flex-row items-center gap-4">
 				<a href="https://www.instagram.com/lohs_legends" target="_blank" class="inline-flex items-center gap-2 hover:text-[#AA1F2E]"> <i class="fa-brands fa-instagram text-lg pt-0.5 text-white"></i> lohs_legends </a>
 				<p class="hidden md:block">|</p>
-				<p class="text-white-200">© 2025 SSC ❤️</p>
+				<p class="text-white-200"><span aria-hidden="true">©</span> 2025 SSC ❤️</p>
 			</div>
 		</div>
 	</footer>
