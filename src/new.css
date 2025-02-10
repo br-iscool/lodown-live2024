@@ -107,35 +107,23 @@ li a:hover {
 .cool-art {
     position: relative;
     background: var(--red);
-    text-align: center; /* Centers the image horizontally */
+    text-align: center;
 }
 
 .cool-art > .section-heading {
     padding-top: 8rem;
-    padding-bottom: 0;
-}
-
-.cool-art h1 {
+    padding-bottom: 3rem;
     color: white;
 }
 
 .cool-art img {
-    width: 100%;
-    transform: translateY(25%);
-}
-
-@media (max-width: 768px) {
-    .cool-art img {
-        bottom: -10px;
-        max-width: 90%;
-    }
-}
-
-@media (max-width: 480px) {
-    .cool-art img {
-        bottom: -5px;
-        max-width: 100%;
-    }
+    padding: 1rem;
+    width: 90%;
+    height: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
 }
 
 /* About section */
@@ -664,10 +652,21 @@ li a:hover {
 
 /* Break art section */
 
+.break-art {
+    margin-top: 5rem;
+    position: relative;
+    background: var(--red);
+    text-align: center;
+}
+
 .break-art img {
-    margin: auto;
-    align-items: center;
-    justify-content: center;
+    padding: 1rem;
+    width: 90%;
+    height: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
 }
 
 /* About SSC section */
