@@ -693,6 +693,10 @@ li a:hover {
     .about-the-ssc p {
         width: 90%;
     }
+
+    .about-ssc-heading {
+        font-size: 2rem !important;
+    }
 }
 
 /* Sponsor section */
