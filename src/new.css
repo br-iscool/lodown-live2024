@@ -49,6 +49,35 @@ li a:hover {
     border-bottom: 3px solid #aa1f2e;
 }
 
+/* Header logo */
+
+.logo-img {
+    height: 50px;
+    object-fit: contain;
+}
+  
+@media (max-width: 1200px) {
+    .logo-img {
+      width: 150px;
+      height: 60px;
+    }
+}
+  
+@media (max-width: 768px) {
+    .logo-img {
+      width: 120px;
+      height: 50px;
+    }
+}
+  
+@media (max-width: 480px) {
+    .logo-img {
+      width: 100px;
+      height: 40px;
+    }
+}
+  
+
 /* Countdown section (TODO)*/
 
 
