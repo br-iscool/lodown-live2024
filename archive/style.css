@@ -97,7 +97,7 @@ li a:hover {
 .modern-box {
     margin: 0 auto;
     width: 350px;
-    height: 350px;
+    height: 500px;
     padding: 20px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.15));
     border-radius: 12px;
