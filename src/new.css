@@ -1,7 +1,6 @@
 /* TODO
 
 Fix countdown styling on mobile
-Fix stats script
 Fix speakers modern-box
 */
 
@@ -487,7 +486,7 @@ li a:hover {
 
     .modern-box {
         width: 100%;
-        max-width: 300px;
+        max-width: 350px;
     }
 
     .title {
@@ -495,7 +494,7 @@ li a:hover {
     }
 
     .description {
-        font-size: 8px;
+        font-size: 12px;
     }
 }
 

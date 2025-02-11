@@ -185,7 +185,7 @@ window.addEventListener("resize", get_height);
 */
 
 document.addEventListener("DOMContentLoaded", () => {
-	const target = document.querySelector("#stats");
+	const target = document.querySelector(".stats");
 
 	const observer = new IntersectionObserver(
 		(entries) => {
@@ -206,12 +206,12 @@ document.addEventListener("DOMContentLoaded", () => {
 							}
 						}, duration);
 					});
-					observer.unobserve(target); // Stop observing if you only want it to trigger once
+					observer.unobserve(target);
 				}
 			});
 		},
 		{ threshold: 0.5 }
-	); // Trigger when 50% of the section is visible
+	);
 
 	observer.observe(target);
 });
